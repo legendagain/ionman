@@ -1,13 +1,18 @@
-import {Component} from '@angular/core';
-import {NavController} from 'ionic-angular';
+import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
+import { DifficultyMenuPage } from '../difficulty-menu/difficulty-menu';
 
 @Component({
-  templateUrl: 'build/pages/home/home.html'
+    templateUrl: 'build/pages/home/home.html'
 })
 export class HomePage {
-  constructor(private navController: NavController) {
+    constructor(private nav: NavController) {
     }
-  onLink(url: string) {
-      window.open(url);
-  }
+    onLink(url: string) {
+        window.open(url);
+    }
+
+    goToMenu() {
+        this.nav.push(DifficultyMenuPage);
+    }
 }

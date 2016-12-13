@@ -1,0 +1,20 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Let's learn English!</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="home" padding>
+
+    <ion-card>  
+        <ion-list *ngFor="let difficulty of difficulties">
+            <button ion-item (click)="goToDifficulty(difficulty)">
+                {{ formatDifficulty(difficulty) }}
+            </button>
+        </ion-list>
+    </ion-card>
+
+</ion-content>
