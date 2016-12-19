@@ -1,9 +1,6 @@
 <ion-header>
     <ion-navbar>
-        <button ion-button menuToggle>
-            <ion-icon name="menu"></ion-icon>
-        </button>
-        <ion-title>Let's learn English!</ion-title>
+        <ion-title>Select your difficulty</ion-title>
     </ion-navbar>
 </ion-header>
 
@@ -12,7 +9,7 @@
     <ion-card>  
         <ion-list *ngFor="let difficulty of difficulties">
             <button ion-item (click)="goToDifficulty(difficulty)">
-                {{ formatDifficulty(difficulty) }}
+                {{ difficulty }}
             </button>
         </ion-list>
     </ion-card>

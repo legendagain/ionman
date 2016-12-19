@@ -15,4 +15,8 @@ export class HomePage {
     goToMenu() {
         this.nav.push(DifficultyMenuPage);
     }
+
+    goToSavedList() {
+
+    }
 }

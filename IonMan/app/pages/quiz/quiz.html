@@ -1,22 +1,32 @@
 <ion-header>
     <ion-navbar>
-        <button ion-button menuToggle>
-            <ion-icon name="settings">Settings</ion-icon>
-        </button>
-        <ion-title>Let's learn English!</ion-title>
+        <ion-title>{{ difficulty }} {{ level }}</ion-title>
     </ion-navbar>
 </ion-header>
 
-<ion-content class="home" padding>
+<ion-content class="quiz" padding>
+    <div class="subheader" text-center>
+        <span>&nbsp;</span>
+        <h2 style="margin-top: 0px;">Question {{ currentQuestionIndex + 1 }} / {{ questions.length }}</h2>
+        <h3 [class.time-is-running-out]="timeLeft <= 3">{{ timeLeft }}</h3>
+        <div class="question">
+            {{ currentQuestion.question }}<br />
+            <ion-icon name="volume-up" (click)="pronounce()"></ion-icon>
+        </div>
+    </div>
 
-    <ion-card>  
+    <ion-card>
         <ion-list>
-            <button ion-item (click)="onLink('http://go.microsoft.com/fwlink/?LinkID=820516')">
-                <ion-icon name="jet" item-left></ion-icon>
-                Getting Started
+            <div *ngFor="let answer of answers">
+                <button ion-item (click)="submit(answer)">
+                    {{ answer }}
+                </button>
+            </div>
+            <button ion-item (click)="submit(answer)">
+                I don't know
             </button>
         </ion-list>
-        
+
     </ion-card>
 
 </ion-content>

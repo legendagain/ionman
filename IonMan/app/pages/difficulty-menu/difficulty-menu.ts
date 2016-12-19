@@ -1,26 +1,27 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { Difficulty } from '../../models/level'
 import { LevelMenuPage } from '../level-menu/level-menu';
+import { Database } from '../../models/database'
+
+declare var require: any;
+var _ = require('underscore');
 
 @Component({
-    templateUrl: 'build/pages/level-menu/level-menu.html'
+    templateUrl: 'build/pages/difficulty-menu/difficulty-menu.html'
 })
 export class DifficultyMenuPage {
-    difficulties: Difficulty[];
+    difficulties: string[];
+
     constructor(private nav: NavController) {
-        this.difficulties = [Difficulty.Beginner, Difficulty.Intermediate];
+        var difficulties = Database.questions.data.map(qns => qns.difficulty);
+        this.difficulties = _.uniq(difficulties);
     }
 
     onLink(url: string) {
         window.open(url);
     }
 
-    formatDifficulty(difficulty: Difficulty) {
-        return Difficulty[difficulty];
-    }
-
-    goToDifficulty(difficulty: Difficulty) {
+    goToDifficulty(difficulty: string) {
         this.nav.push(LevelMenuPage, { difficulty: difficulty });
     }
 }

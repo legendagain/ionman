@@ -95,4 +95,5 @@
   <plugin name="ionic-plugin-keyboard" version="2.2.1" />
   <preference name="Orientation" value="portrait" />
   <plugin name="cordova-sqlite-storage" version="2.0.0" />
+  <plugin name="cordova-plugin-tts" version="0.2.3" />
 </widget>
