@@ -11,3 +11,14 @@
 @import "../pages/home/home";
 @import "../pages/../pages/level-menu/level-menu";
 @import "../pages/quiz/quiz";
+
+// Lao fonts: refer to http://www.laoscript.net/download/
+@font-face {
+    font-family: 'saysettha_web';
+    src: url('../assets/fonts/saysettha_web.eot');
+    src: url('../assets/fonts/saysettha_web.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/saysettha_web.woff') format('woff'), url('../assets/fonts/saysettha_web.ttf') format('truetype'), url('../assets/fonts/saysettha_web.svg#SaysetthaWeb') format('svg');
+}
+
+.lao-web {
+    font-family: saysettha_web !important;
+}

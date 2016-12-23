@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, Platform } from 'ionic-angular';
-import { SQLite } from 'ionic-native';
+import { MediaPlugin } from 'ionic-native';
 import { Question } from '../../models/question';
 import { Database } from '../../models/database';
 
@@ -8,6 +8,7 @@ declare var require: any;
 var _ = require('underscore');
 var Timer = require('timer.js');
 
+declare var cordova: any;
 declare var TTS: any;
 
 @Component({
@@ -18,16 +19,25 @@ export class QuizPage {
     difficulty: string;
     level: number;
     questions: Question[];
-    answers: string[];
+    answers: any[] = [];
 
     timePerQuestion: number;
     timeLeft: number;
     timer: any;
+    nextQnsTimer: any;
 
     currentQuestion: Question;
     currentQuestionIndex: number;
 
+    correctAudio: MediaPlugin;
+    wrongAudio: MediaPlugin
+
     constructor(private nav: NavController, private params: NavParams, private platform: Platform) {
+        try {
+            this.correctAudio = new MediaPlugin(this.getAudioFilename('correct-answer.mp3'));
+            this.wrongAudio = new MediaPlugin(this.getAudioFilename('wrong-answer.mp3'));
+        } catch (Exception) { }
+
         this.isNative = !platform.is('core');
         this.currentQuestion = Question.emptyQuestion();
         this.difficulty = params.get('difficulty');
@@ -51,7 +61,6 @@ export class QuizPage {
             return;
         }
 
-        this.answers = this.questions.map(qns => qns.answer);
         this.currentQuestionIndex = 0;
         this.showQuestion();
     }
@@ -71,11 +80,15 @@ export class QuizPage {
                 .map(qns => qns.answer);
             answers = _.sample(answers, 3);     // takes a sample of n = 3 (4th answer will be valid)
             answers.push(question.answer);      // appends valid answer
-            this.answers = _.shuffle(answers);  // shuffle & display to user
+            answers = _.shuffle(answers);       // shuffle, and display to user
+            this.answers = answers.map(ans => {
+                return { text: ans };
+            });
 
             // provides initial pronunciation, and starts timer
             this.pronounce();
             this.startTimer();
+            this.submitActive = true;
         }
     }
 
@@ -88,7 +101,9 @@ export class QuizPage {
                     text: this.currentQuestion.question,
                     locale: 'en-GB',
                     rate: 0.75
-                }, null, null);
+                },
+                    function () { },    // success callback
+                    function () { });   // failure callback
             } catch (e) {
                 this.isNative = false;
             }
@@ -111,33 +126,61 @@ export class QuizPage {
         timer.on('end', function () {
             self.submit('Time up.');
         });
-        
+
         timer.start(this.timePerQuestion);
     }
 
-    // todo: animation
+    submitActive: boolean = true;
     submit(answer: string) {
+        if (!this.submitActive)
+            return;
+        this.submitActive = false;
+
         this.timer.stop();
+        this.timeLeft = 0;
         var correctCount = this.currentQuestion.correctCount || 0;
 
         // correct answer
         if (answer == this.currentQuestion.answer) {
+            this.playAudio(this.correctAudio);
             correctCount++;
-            alert('yay, you got it right!');
         }
         // wrong answer
         else {
+            this.playAudio(this.wrongAudio);
             correctCount = 0;
-            alert('no u fucking noob');
+            var wrongAnswer = this.answers.filter(ans => ans.text == answer)[0];
+            if (wrongAnswer)
+                wrongAnswer.isCorrect = false;  // i.e. is wrong
         }
+
+        var correctAnswer = this.answers.filter(ans => ans.text == this.currentQuestion.answer)[0];
+        correctAnswer.isCorrect = true;
 
         this.currentQuestion.correctCount = correctCount;
         this.currentQuestionIndex++;
-        this.showQuestion();
+
+        var self = this;
+        var nextQnsTimer = this.nextQnsTimer = new Timer({
+            tick: 1
+        });
+        nextQnsTimer.on('end', function () {
+            self.showQuestion();
+        });
+        nextQnsTimer.start(2.5);
+    }
+
+    private getAudioFilename(filename: string): string {
+        return cordova.file.applicationDirectory + 'www/build/assets/audio/' + filename;
+    }
+
+    private playAudio(audio: MediaPlugin) {
+        if (audio)
+            audio.play();
     }
 
     toggleFavorite() {
-        this.currentQuestion.isFavorite = !this.currentQuestion.isFavorite;
+        this.currentQuestion.favorited = !this.currentQuestion.favorited;
     }
 
     endQuiz() {
@@ -146,8 +189,8 @@ export class QuizPage {
     }
 
     ionViewWillLeave() {
-        // disposes of timer
-        this.timer = null;
+        // disposes of timers
+        this.timer = this.nextQnsTimer = null;
     }
 }
 
@@ -155,4 +198,9 @@ class Item {
     question: string;
     answers: string[];
     correctAnswer: number;
+}
+
+class Answer {
+    text: string;
+    isCorrect: boolean;
 }

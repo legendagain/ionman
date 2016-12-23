@@ -13,14 +13,20 @@
             {{ currentQuestion.question }}<br />
             <ion-icon name="volume-up" (click)="pronounce()"></ion-icon>
         </div>
+        <ion-icon [class.favorited]="currentQuestion.favorited"
+                  [name]="currentQuestion.favorited ? 'heart' : 'heart-outline'"
+                  (click)="toggleFavorite()"></ion-icon>
     </div>
 
-    <ion-card>
+    <ion-card class="answers">
         <ion-list>
             <div *ngFor="let answer of answers">
-                <button ion-item (click)="submit(answer)">
-                    {{ answer }}
-                </button>
+                <div>
+                    <button ion-item (click)="submit(answer.text)"
+                            [class.correct]="answer.isCorrect" [class.wrong]="answer.isCorrect == false">
+                        {{ answer.text }}
+                    </button>
+                </div>
             </div>
             <button ion-item (click)="submit(answer)">
                 I don't know

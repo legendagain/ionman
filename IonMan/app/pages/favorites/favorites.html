@@ -1,0 +1,16 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>My Favorites</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="favorites" padding>
+
+    <ion-item-group *ngFor="let level of levels">
+        <ion-item-divider color="light">{{ level.title }}</ion-item-divider>
+        <div *ngFor="let question of levels.questions">
+            <ion-item>blablabla</ion-item>
+        </div>
+    </ion-item-group>
+
+</ion-content>

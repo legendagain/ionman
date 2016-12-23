@@ -10,7 +10,18 @@
         "cordova-plugin-console": {
             "PACKAGE_NAME": "io.cordova.myappc4709f"
         },
+        "cordova-plugin-crosswalk-webview": {
+            "XWALK_VERSION": "21+",
+            "XWALK_LITEVERSION": "xwalk_core_library_canary:17+",
+            "XWALK_COMMANDLINE": "--disable-pull-to-refresh-effect",
+            "XWALK_MODE": "embedded",
+            "XWALK_MULTIPLEAPK": "true",
+            "PACKAGE_NAME": "io.cordova.myappc4709f"
+        },
         "cordova-plugin-device": {
+            "PACKAGE_NAME": "io.cordova.myappc4709f"
+        },
+        "cordova-plugin-media": {
             "PACKAGE_NAME": "io.cordova.myappc4709f"
         },
         "cordova-plugin-splashscreen": {
@@ -19,18 +30,25 @@
         "cordova-plugin-statusbar": {
             "PACKAGE_NAME": "io.cordova.myappc4709f"
         },
-        "cordova-plugin-whitelist": {
+        "cordova-plugin-tts": {
             "PACKAGE_NAME": "io.cordova.myappc4709f"
         },
-        "ionic-plugin-keyboard": {
+        "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "io.cordova.myappc4709f"
         },
         "cordova-sqlite-storage": {
             "PACKAGE_NAME": "io.cordova.myappc4709f"
         },
-        "cordova-plugin-tts": {
+        "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "io.cordova.myappc4709f"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "io.cordova.myappc4709f"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "io.cordova.myappc4709f"
+        }
+    }
 }

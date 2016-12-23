@@ -1,7 +1,7 @@
 ﻿export class Question {
     id: number;
     correctCount: number = 0;
-    isFavorite: boolean = false;
+    favorited: boolean = false;
 
     constructor(
         public question: string,    // question word in English
