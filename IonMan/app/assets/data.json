@@ -1,0 +1,3642 @@
+﻿[
+  {
+    "question": "decide",
+    "answer": "ຕັດສິນໃຈ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "move",
+    "answer": " ເຄື່ອນທີ່",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "show",
+    "answer": "ໃຫ້ເບິ່ງ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "believe",
+    "answer": "ເຊື່ອ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "find",
+    "answer": "ຄົ້ນພົບ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "leave",
+    "answer": "ປະໄວ້",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "turn",
+    "answer": "ລ້ຽວ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "set",
+    "answer": "ຈັດ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "arrive",
+    "answer": "ມາຮອດ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "return",
+    "answer": "ກັບຄືນ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "pass",
+    "answer": "ຂ້າມ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "grow",
+    "answer": "ເຕີບໂຕ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "lose",
+    "answer": "ເສຍ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "stay",
+    "answer": "ພັກ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "break",
+    "answer": "ເຮັດແຕກ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "practice",
+    "answer": "ຝຶກຊ້ອມ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "clean",
+    "answer": "ເຮັດໃຫ້ສະອາດ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "feel",
+    "answer": "ຮູ້ສຶກ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "order",
+    "answer": "ສັ່ງ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "rise",
+    "answer": "ຂຶ້ນ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "act",
+    "answer": "ສະແດງ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "finish",
+    "answer": "ສຳເລັດ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "let",
+    "answer": "ໃຫ້",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "climb",
+    "answer": "ຂຶ້ນ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "become",
+    "answer": "ກາຍເປັນ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "cut",
+    "answer": "ຕັດ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "join",
+    "answer": "ຮ່ວມກັນ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "laugh",
+    "answer": "ຫົວ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "miss",
+    "answer": "ຄິດຮອດ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "reach",
+    "answer": "ເຖິງ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "understand",
+    "answer": "ເຂົ້າໃຈ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "wear",
+    "answer": "ໃສ່",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "bring",
+    "answer": "ພາມາ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "choose",
+    "answer": "ເລືອກ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "smell",
+    "answer": "ກິ່ນ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "happen",
+    "answer": "ເກີດຂຶ້ນ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "draw",
+    "answer": "ແຕ້ມ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "enter",
+    "answer": "ເຂົ້າໄປ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "close",
+    "answer": "ປິດ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "hope",
+    "answer": "ຫວັງ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "pay",
+    "answer": "ຈ່າຍ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "receive",
+    "answer": "ໄດ້",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "attack",
+    "answer": "ເຂົ້າຕີ, ໂຈມຕີ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "travel",
+    "answer": "ທ່ອງທ່ຽວ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "spend",
+    "answer": "ໃຊ້(ເວລາ)",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "throw",
+    "answer": "ໂຍນ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "remember",
+    "answer": "ຈື່ຈຳ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "taste",
+    "answer": "ຊີມ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "hurt",
+    "answer": "ເຈັບ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "mean",
+    "answer": "ມີຄວາມໝາຍ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "pick",
+    "answer": "ເກັບ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "discover",
+    "answer": "ຄົ້ນພົບ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "excuse",
+    "answer": "ຂໍໂຕ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "invite",
+    "answer": "ຊວນ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "forget",
+    "answer": "ລືມ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "hold",
+    "answer": "ຈັບ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "seem",
+    "answer": "ເບິ່ງຄືວ່າ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "store",
+    "answer": "ເກັບມ້ຽນໄວ້",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "worry",
+    "answer": "ເປັນຫ່ວງ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "save",
+    "answer": "ຊ່ວຍ(ຊີວິດ)",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "count",
+    "answer": "ນັບ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "marry",
+    "answer": "ແຕ່ງງານ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "shut",
+    "answer": "ປິດ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "hit",
+    "answer": "ຕີ",
+    "difficulty": "Intermediate",
+    "level": 1,
+    "type": "Verb"
+  },
+  {
+    "question": "holiday",
+    "answer": "ມື້ພັກ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "corner",
+    "answer": "ແຈ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "piece",
+    "answer": "ຊິ້ນສ່ວນ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "glass",
+    "answer": "ແກ້ວ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "scene",
+    "answer": "ສາກ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "news",
+    "answer": "ຂ່າວ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "circle",
+    "answer": "ວົງວຽນ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "group",
+    "answer": "ກຸ່ມ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "person",
+    "answer": "ຄົນດຽວ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "guest",
+    "answer": "ແຂກ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "space",
+    "answer": "ພື້ນທີ່ຫວ່າງ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "part",
+    "answer": "ສ່ວນ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "power",
+    "answer": "ອໍານາດ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "shape",
+    "answer": "ຮູບຮ່າງ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "minute",
+    "answer": "ນາທີ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "field",
+    "answer": "ເດີ່ນ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "age",
+    "answer": "ອາຍຸ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "science",
+    "answer": "ວິທະຍາສາດ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "job",
+    "answer": "ວຽກ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "price",
+    "answer": "ລາຄາ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "point",
+    "answer": "ຈຸດ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "smoke",
+    "answer": "ຄວັນ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "answer",
+    "answer": "ຄໍາຕອບ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "factory",
+    "answer": "ໂຮງງານ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "half",
+    "answer": "ເຄິ່ງ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "business",
+    "answer": "ທຸລະກິດ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "secret",
+    "answer": "ຄວາມລັບ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "case",
+    "answer": "ກໍລະນີ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "fact",
+    "answer": "ຄວາມເປັນຈິງ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "percent",
+    "answer": "ເປີເຊັນ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "photograph",
+    "answer": "ຮູບຖ່າຍ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "note",
+    "answer": "ບັນທຶກ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "vacation",
+    "answer": "ຍາມພັກ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "mind",
+    "answer": "ຈິດໃຈ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "place",
+    "answer": "ສະຖານທີ່",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "memory",
+    "answer": "ຄວາມຊົງຈໍາ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "pair",
+    "answer": "ຄູ່",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "language",
+    "answer": "ພາສາ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "ground",
+    "answer": "ພື້ນ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "noise",
+    "answer": "ສຽງຟົດນັນ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "mistake",
+    "answer": "ຄວາມຜີດພາດ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "death",
+    "answer": "ຄວາມຕາຍ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "promise",
+    "answer": "ຄໍາສັນຍາ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "rule",
+    "answer": "ກົດ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "daughter",
+    "answer": "ລູກສາວ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "restaurant",
+    "answer": "ຮ້ານອາຫານ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "vegetable",
+    "answer": "ຜັກ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "future",
+    "answer": "ອະນາຄົດ",
+    "difficulty": "Intermediate",
+    "level": 2,
+    "type": "Noun"
+  },
+  {
+    "question": "afraid",
+    "answer": "ຢ້ານ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "few",
+    "answer": "ເລັກໜ້ອຍ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "ready",
+    "answer": "ພ້ອມ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "both",
+    "answer": "ທັງສອງ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "interested",
+    "answer": "ສົນໃຈ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "sure",
+    "answer": "ແນ່ໃຈ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "real",
+    "answer": "ແທ້",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "short",
+    "answer": "ສັ້ນ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "wrong",
+    "answer": "ຜິດ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "fine",
+    "answer": "ດີ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "narrow",
+    "answer": "ແຄບ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "different",
+    "answer": "ແຕກຕ່າງ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "straight",
+    "answer": "ຊື່",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "thick",
+    "answer": "ໜາ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "enough",
+    "answer": "ພຽງພໍ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "thin",
+    "answer": "ຈ່ອຍ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "another",
+    "answer": "ອື່ນ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "certain",
+    "answer": "ແນ່ນອນ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "silent",
+    "answer": "ງຽບ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "difficult",
+    "answer": "ຍາກ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "important",
+    "answer": "ສໍາຄັນ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "popular",
+    "answer": "ນິຍົມ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "right",
+    "answer": "ຖືກຕ້ອງ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "several",
+    "answer": "ຫຼາຍ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "ill",
+    "answer": "ປ່ວຍ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "junior",
+    "answer": "ຄົນໜຸ່ມນ້ອຍ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "necessary",
+    "answer": "ຈໍາເປັນ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "proud",
+    "answer": "ພູມໃຈ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "quiet",
+    "answer": "ມິດ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "each",
+    "answer": "ແຕ່ລະ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "able",
+    "answer": "ສາມາດ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "same",
+    "answer": "ຄືກັນ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "tired",
+    "answer": "ເມື່ອຍ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "usual",
+    "answer": "ທໍາມະດາ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "dangerous",
+    "answer": "ອັນຕະລາຍ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "natural",
+    "answer": "ທໍາມະຊາດ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "else",
+    "answer": "ອື່ນ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "simple",
+    "answer": "ງ່າຍ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "middle",
+    "answer": "ລະຫວ່າງກາງ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "wonderful",
+    "answer": "ມະຫັດສະຈັນ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "alone",
+    "answer": "ໂດດດ່ຽວ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "once",
+    "answer": "ເທື່ອດຽວ, ຄັ້ງດຽວ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "almost",
+    "answer": "ເກືອບ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "even",
+    "answer": "ສະເໝີກັນ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "also",
+    "answer": "ນອກຈາກນັ້ນ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "suddenly",
+    "answer": "ທັນໃດນັ້ນ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "already",
+    "answer": "ຮຽບຮ້ອຍແລ້ວ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "far",
+    "answer": "ໄກ",
+    "difficulty": "Intermediate",
+    "level": 3,
+    "type": "Adjective"
+  },
+  {
+    "question": "win",
+    "answer": "ຊະນະ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "add",
+    "answer": "ເພີ່ມ, ຕື່ມ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "complain",
+    "answer": "ຈົ່ມ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "burn",
+    "answer": "ເຜົາ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "claim",
+    "answer": "ຮຽກຮ້ອງເອົາ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "awake",
+    "answer": "ຮູ້ເມື່ອ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "fix",
+    "answer": "ສ້ອມແປງ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "develop",
+    "answer": "ພັດທະນາ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "weigh",
+    "answer": "ຊັ່ງ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "imagine",
+    "answer": "ຈິນຕະນາການ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "fill",
+    "answer": "ຕື່ມ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "create",
+    "answer": "ສ້າງ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "follow",
+    "answer": "ປະຕິບັດຕາມ, ເຮັດຕາມ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "guess",
+    "answer": "ເດົາ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "exist",
+    "answer": "ມີຢູ່",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "lay",
+    "answer": "ວາງລົງ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "lift",
+    "answer": "ຍົກ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "protect",
+    "answer": "ປົກປ້ອງ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "record",
+    "answer": "ອັດ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "shoot",
+    "answer": "ຍິງ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "regard",
+    "answer": "ນັບຖື",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "succeed",
+    "answer": "ປະສົບຜົນສໍາເລັດ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "agree",
+    "answer": "ຕົກລົງເຫັນດີ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "borrow",
+    "answer": "ຢືມ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "aim",
+    "answer": "ແນໃສ່",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "introduce",
+    "answer": "ແນະນໍາໃຫ້ຮູ້ຈັກ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "arrange",
+    "answer": "ກະກຽມ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "earn",
+    "answer": "ໄດ້ຮັບ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "deliver",
+    "answer": "ສົ່ງມອບ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "explain",
+    "answer": "ອະທິບາຍ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "include",
+    "answer": "ລວມທັງ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "manage",
+    "answer": "ຈັດການ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "share",
+    "answer": "ແບ່ງປັນ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "tear",
+    "answer": "ຈີກ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "support",
+    "answer": "ສະໜັບສະໜູນ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "wonder",
+    "answer": "ຂ້ອງໃຈ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "deal",
+    "answer": "ຈັດການ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "fail",
+    "answer": "ລົ້ມເຫຼວ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "realize",
+    "answer": "ຄິດພໍ້",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "suggest",
+    "answer": "ແນະນໍາ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "match",
+    "answer": "ຈັບຄູ່",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "allow",
+    "answer": "ອະນຸຍາດ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "knock",
+    "answer": "ເຄາະ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "belong",
+    "answer": "ເປັນຂອງ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "collect",
+    "answer": "ເກັບ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "escape",
+    "answer": "ໜີ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "flow",
+    "answer": "ໄຫຼ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "remove",
+    "answer": "ຍ້າຍ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "lie",
+    "answer": "ຂີ້ຕົວະ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "prefer",
+    "answer": "ມັກຫຼາຍກວ່າ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "raise",
+    "answer": "ຍົກສູງ, ຍົກລະດັບ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "divide",
+    "answer": "ແບ່ງ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "respect",
+    "answer": "ເຄົາລົບ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "shout",
+    "answer": "ຮ້ອງ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "accept",
+    "answer": "ຍອມຮັບ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "serve",
+    "answer": "ບໍລິການ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "boil",
+    "answer": "ຕົ້ມ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "repeat",
+    "answer": "ເຮັດຄືນ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "describe",
+    "answer": "ພັນລະນາ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "rush",
+    "answer": "ຟ້າວ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "handle",
+    "answer": "ຮັບມື",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "beat",
+    "answer": "ຕີ, ທຸບ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "waste",
+    "answer": "ໃຊ້ເປືອງ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "lead",
+    "answer": "ນໍາພາ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "bear",
+    "answer": "ທົນ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "continue",
+    "answer": "ສືບຕໍ່",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "demand",
+    "answer": "ຕ້ອງການ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "lend",
+    "answer": "ໃຫ້ຢືມ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "pour",
+    "answer": "ເທ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "spare",
+    "answer": "ສະຫງວນໄວ້",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "destroy",
+    "answer": "ທໍາລາຍ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "express",
+    "answer": "ສະແດງອອກ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "contain",
+    "answer": "ບັນຈຸ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "desert",
+    "answer": "ປະຖິ້ມ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "gain",
+    "answer": "ໄດ້ຮັບ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "slip",
+    "answer": "ລົ້ມພະລາດ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "hide",
+    "answer": "ເຊື່ອງ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "praise",
+    "answer": "ຍົກຍ້ອງ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "prove",
+    "answer": "ພິສູດ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "intend",
+    "answer": "ຕັ້ງໃຈ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "cross",
+    "answer": "ຂ້າມ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "deny",
+    "answer": "ປະຕິເສດ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "discuss",
+    "answer": "ສົນທະນາໂອ້ລົມ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "steal",
+    "answer": "ລັກ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "prevent",
+    "answer": "ປ້ອງກັນ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "state",
+    "answer": "ກ່າວ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "print",
+    "answer": "ພິມ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "examine",
+    "answer": "ກວດສອບ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "expect",
+    "answer": "ຄາດຫວັງ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "forgive",
+    "answer": "ຍົກໂທດໃຫ້",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "measure",
+    "answer": "ວັດແທກ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "prepare",
+    "answer": "ຕຽມ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "notice",
+    "answer": "ສັງເກດ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "provide",
+    "answer": "ໃຫ້",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "gather",
+    "answer": "ເກັບກ່ຽວ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "cause",
+    "answer": "ເປັນສາເຫດໃຫ້",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "appear",
+    "answer": "ປະກົດ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "fit",
+    "answer": "ພໍດີ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "check",
+    "answer": "ກວດ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "compare",
+    "answer": "ສົມທຽບ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "design",
+    "answer": "ອອກແບບ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "hate",
+    "answer": "ຊັງ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "improve",
+    "answer": "ປັບປຸງ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "mix",
+    "answer": "ປະສົມ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "repair",
+    "answer": "ສ້ອມແປງ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "strike",
+    "answer": "ປະທະ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "wish",
+    "answer": "ປາດຖະໜາ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "attend",
+    "answer": "ເຂົ້າຮ່ວມ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "depend",
+    "answer": "ຂຶ້ນຢູ່ກັບ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "stick",
+    "answer": "ຕິດ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "offer",
+    "answer": "ສະເໜີ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "remain",
+    "answer": "ຫຼົງເຫຼືອ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "spread",
+    "answer": "ແຈກຢາຍ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "mention",
+    "answer": "ກ່າວເຖິງ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "suffer",
+    "answer": "ທົນທຸກທໍລະມານ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "apply",
+    "answer": "ນໍາໃຊ້",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "direct",
+    "answer": "ສັ່ງ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "propose",
+    "answer": "ສະເໜີ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "dare]",
+    "answer": "ກ້າ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "slide",
+    "answer": "ເລື່ອນ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "approach",
+    "answer": "ໃກ້ເຂົ້າມາ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "control",
+    "answer": "ຄວບຄຸມ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "produce",
+    "answer": "ຜະລິດ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "disappear",
+    "answer": "ຫາຍຕົວໄປ, ຫາຍໄປ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "dislike",
+    "answer": "ບໍ່ມັກ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "hang",
+    "answer": "ຫ້ອຍ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "reply",
+    "answer": "ຕອບກັບ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "swallow",
+    "answer": "ກືນ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "advise",
+    "answer": "ແນະນໍາ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "copy",
+    "answer": "ສໍາເນົາ",
+    "difficulty": "Intermediate",
+    "level": 4,
+    "type": "Verb"
+  },
+  {
+    "question": "shock",
+    "answer": "ອາການຕື່ນຕົກໃຈ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "balance",
+    "answer": "ຄວາມດຸ່ນດ່ຽງ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "charge",
+    "answer": "ລາຄາ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "effort",
+    "answer": "ຄວາມພະຍາຍາມ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "heat",
+    "answer": "ຄວາມຮ້ອນ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "style",
+    "answer": "ແບບ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "tail",
+    "answer": "ທາງ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "tour",
+    "answer": "ການທ່ອງທ່ຽວ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "bit",
+    "answer": "ຈໍານວນນ້ອຍໆ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "lock",
+    "answer": "ອັນລັອກ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "cost",
+    "answer": "ລາຄາ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "effect",
+    "answer": "ຜົນກະທົບ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "fear",
+    "answer": "ຄວາມຍ້ານກວາ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "habit",
+    "answer": "ນິໄສ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "information",
+    "answer": "ຂໍ້ມູນ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "limit",
+    "answer": "ຈຳກັດ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "object",
+    "answer": "ວັດຖຸປະສົງ, ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "fashion",
+    "answer": "ເຄື່ອງແຟຊັນ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "couple",
+    "answer": "ຄູ່",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "profit",
+    "answer": "ກຳໄລ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "rest",
+    "answer": "ພັກຜ່ອນ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "topic",
+    "answer": "ຫົວຂໍ້",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "hall",
+    "answer": "ຫ້ອງໂຖງ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "concert",
+    "answer": "ງານຄອນເສີດ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "track",
+    "answer": "ທາງຍ່າງ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "value",
+    "answer": "ຄຸນຄ່າ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "wealth",
+    "answer": "ສັບສົມບັດ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "favor",
+    "answer": "ຄວາມຊ່ວຍເຫຼືອ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "accent",
+    "answer": "ສຳນຽງ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "block",
+    "answer": "ກີດຂວງ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "care",
+    "answer": "ເປັນຫ່ວງ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "damage",
+    "answer": "ຄວາມເສຍຫາຍ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "damage",
+    "answer": "ຄວາມເສຍຫາຍ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "weight",
+    "answer": "ນໍ້າໜັກ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "form",
+    "answer": "ຮູບແບບ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "lack",
+    "answer": "ຂາດແຄນ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "pain",
+    "answer": "ຄວາມເຈັບປວດ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "moment",
+    "answer": "ຂະນະທີ່",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "period",
+    "answer": "ໄລຍະເວລາ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "problem",
+    "answer": "ບັນຫາ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "reason",
+    "answer": "ເຫດຜົນ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "theater",
+    "answer": "ໂຮງໜັງ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "system",
+    "answer": "ລະບົບ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "row",
+    "answer": "ແຖວ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "view",
+    "answer": "ມຸມມອງ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "weather",
+    "answer": "ອາກາດ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "blood",
+    "answer": "ເລືອດ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "cloth",
+    "answer": "ເຄື່ອງ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "crowd",
+    "answer": "ແອອັດ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "wedding",
+    "answer": "ງານແຕ່ງດອງ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "passage",
+    "answer": "ການໂດຍສານ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "message",
+    "answer": "ໍຂໍ້ຄວາມ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "nation",
+    "answer": "ຊາດ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "energy",
+    "answer": "ພະລັງ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "plenty",
+    "answer": "ຫຼາກຫຼາຍ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "area",
+    "answer": "ຂົງເຂດ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "computer",
+    "answer": "ຄອມພິວເຕີ້",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "example",
+    "answer": "ຕົວຢ່າງ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "alphabet",
+    "answer": "ຕົວອັກສອນ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "amount",
+    "answer": "ຈຳນວນ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "knowledge",
+    "answer": "ຄວາມຮູ້",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "birth",
+    "answer": "ການເກີດ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "nature",
+    "answer": "ທຳມະຊາດ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "brain",
+    "answer": "ສະໝອງ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "century",
+    "answer": "ສັດຕະວັດ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "pattern",
+    "answer": "ຕົ້ນແບບ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "distance",
+    "answer": "ຄວາມຫ່າງໄກ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "valley",
+    "answer": "ຮອມພູເຂົາ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "program",
+    "answer": "ລາຍການ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "sense",
+    "answer": "ຄວາມຮູ້ສຶກ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "stage",
+    "answer": "ເວທີ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "coast",
+    "answer": "ຝັ່ງ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "culture",
+    "answer": "ວັດທະນາທຳ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "exercise",
+    "answer": "ບົດເຝິກຫັດ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "result",
+    "answer": "ຜົນ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "service",
+    "answer": "ການບໍລິການ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "health",
+    "answer": "ສຸຂະພາບ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "occasion",
+    "answer": "ເນື່ອງໃນໂອກາດ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "railway",
+    "answer": "ທາງລົດໄຟ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "base",
+    "answer": "ພື້ນຖານ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "speech",
+    "answer": "ຄຳເວົ້າ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "safety",
+    "answer": "ປອດໄພ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "impression",
+    "answer": "ປະທັບໃຈ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "position",
+    "answer": "ຕຳແໜ່ງ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "opinion",
+    "answer": "ແນວຄິດ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "medicine",
+    "answer": "ຢາ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "prize",
+    "answer": "ລາງວັນ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "pleasure",
+    "answer": "ຄວາມຍິນດີ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "stair",
+    "answer": "ຈ້ອງເບິ່ງ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "coal",
+    "answer": "ຸ່ຖ່ານ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "traffic",
+    "answer": "ຈາລະຈອນ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "university",
+    "answer": "ມະຫາວິທະຍາໄລ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "warning",
+    "answer": "ດ້ວຍຄວາທອົບອຸນ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "sheet",
+    "answer": "ຫນ້າເຈ້ຍ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "breath",
+    "answer": "ຫາຍໃຈ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "content",
+    "answer": "ສາລະບານ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "mark",
+    "answer": "ໝາຍເຄື່ອງໝາຍ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "course",
+    "answer": "ຫຼັກສູດການຮຽນ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "officer",
+    "answer": "ພະນັກງານຫ້ອງການ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "salary",
+    "answer": "ເງິນເດືອນ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "trick",
+    "answer": "ຫຼອກລວງ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "president",
+    "answer": "ປະທານ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "address",
+    "answer": "ສະຖານທີ່",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "event",
+    "answer": "ເຫດການ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "furniture",
+    "answer": "ເຄື່ອງເຮືອນເຟີນິເຈ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "accident",
+    "answer": "ອຸບັດຕິເຫດ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "stuff",
+    "answer": "ສິ່ງຂອງ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "attention",
+    "answer": "ຄວາມຕັ້ງໃຈ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "education",
+    "answer": "ການສຶກສາ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "stranger",
+    "answer": "ຄົນແປກໜ້າ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "progress",
+    "answer": "ຄວາມກ້າວໜ້າ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "report",
+    "answer": "ລາຍງານ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "secretary",
+    "answer": "ເລຂາ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "sight",
+    "answer": "ການເບິ່ງເຫັນ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "term",
+    "answer": "ກໍານົດເວລາ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "youth",
+    "answer": "ຊາວໜຸ່ມ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "trust",
+    "answer": "ເຊື່ອ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "condition",
+    "answer": "ເງື່ອນໄຂ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "subject",
+    "answer": "ວິຊາຮຽນ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "professor",
+    "answer": "ຜູ້ຊຽວຊານ,ອາຈານ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "soldier",
+    "answer": "ທະຫານ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "cheer",
+    "answer": "ເຮັດໃຫ້ມີກຳລັງໃຈ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "purpose",
+    "answer": "ວັດຖຸປະສົງ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "society",
+    "answer": "ສັງຄົມ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "symbol",
+    "answer": "ເຄື່ອງໝາຍສັນຍາລັກ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "audience",
+    "answer": "ຜູ້ຊົມ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "main",
+    "answer": "ຫຼັກໆ,",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "perfect",
+    "answer": "ສົມບູນ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "broad",
+    "answer": "ກ້ວາງຂວາງ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "central",
+    "answer": "ສູນກາງ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "helpful",
+    "answer": "ເປັນປະໂຫຍດ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "loud",
+    "answer": "ສຽງດັງ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "single",
+    "answer": "ໂສດ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "firm",
+    "answer": "ບໍລິສັດ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "correct",
+    "answer": "ຖືກຕ້ອງ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "foreign",
+    "answer": "ຕ່າງປະເທດ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "general",
+    "answer": "ທົ່ວໄປ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "lovely",
+    "answer": "ໜ້າຮັກ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "public",
+    "answer": "ສາທາລະນະ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "rapid",
+    "answer": "ໄວ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "thirsty",
+    "answer": "ຄໍແຫ້ງຫິວນໍ້າ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "awful",
+    "answer": "ເປັນຕາຍ້ານ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "human",
+    "answer": "ມະນຸດ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "possible",
+    "answer": "ຄວາມເປັນໄປໄດ້",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "modern",
+    "answer": "ທັນສະໄໝ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "own",
+    "answer": "ເຈົ້າຂອງ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "distant",
+    "answer": "ໄກ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "empty",
+    "answer": "ວ່າງເປົ່າ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "regular",
+    "answer": "ປົກກະຕ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "normal",
+    "answer": "ທຳມະດາ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "total",
+    "answer": "ທັງໝົດ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "absent",
+    "answer": "ບໍ່ມາ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "basic",
+    "answer": "ພື້ນຖານ ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "aware",
+    "answer": "ການຮັບຮ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "brave",
+    "answer": "ຄວາມກ້າຫານ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "daily",
+    "answer": "ປະຈຳວັນ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "crowded",
+    "answer": "ແອອັດ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "double",
+    "answer": "ສອເທົ່າ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "adult",
+    "answer": "ຜູ້ໃຫ່ຍ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "boring",
+    "answer": "ໜ້າເບື່ອ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "familiar",
+    "answer": "ຄຸ້ນເຄີຍ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "dozen",
+    "answer": "ໂຫຼ(12 ອັນ)",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "former",
+    "answer": "ກ່ອນໜ້ານ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "active",
+    "answer": "ຄວາມຫ້າວຫັນ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "equal",
+    "answer": "ເທົ່າກັນ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "personal",
+    "answer": "ສ່ວນບຸກຄົນ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "fair",
+    "answer": "ຍຸດຕິທຳ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "likely",
+    "answer": "ຄ້າຍຄື",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "peaceful",
+    "answer": "ຄວາມສະຫງົບ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "serious",
+    "answer": "ຈິງຈັງ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "violent",
+    "answer": "ຄວາມຮຸ່ນແຮງ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "worth",
+    "answer": "ມີຄ່າ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "alive",
+    "answer": "ມີຊີວິດຢູ່",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "elder",
+    "answer": "ຜູ້ອາວຸໂສ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "least",
+    "answer": "ໜ້ອຍ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "noisy",
+    "answer": "ວົນແຊວ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "smooth",
+    "answer": "ນິ້ມນວນ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "exciting",
+    "answer": "ຕື່ນເຕັ້ນ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "false",
+    "answer": "ຜິດ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "local",
+    "answer": "ທ້ອງຖິ່ນ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "plain",
+    "answer": "ລຽບງາຍ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "similar",
+    "answer": "ຄ້າຍຄື ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "final",
+    "answer": "ສຸດທ້າຍ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "international",
+    "answer": "ສາກົນ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "medical",
+    "answer": "ການຢາ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "stupid",
+    "answer": "ໂງ່",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "opposite",
+    "answer": "ກົງກັນຂ້າມ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "asleep",
+    "answer": "ນອນ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "comfortable",
+    "answer": "ສະດວກສະບາຍ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "excellent",
+    "answer": "ດີເລີດ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "bright",
+    "answer": "ສະຫວ່າງ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "common",
+    "answer": "ທົ່ວໄປ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "foolish",
+    "answer": "ຄວາມໂງ່",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "mild",
+    "answer": "ອ່ອນໂຍນ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "surprised",
+    "answer": "ແປກໃຈ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "anxious",
+    "answer": "ຄວາມກະຕືລືລົນ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "brilliant",
+    "answer": "ເສດຖີພັນລ້ານ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "private",
+    "answer": "ເອກະຊົນ",
+    "difficulty": "Intermediate",
+    "level": 5,
+    "type": "Noun"
+  },
+  {
+    "question": "actually",
+    "answer": "ຕາມປົກກະຕິແລ້ວ",
+    "difficulty": "Intermediate",
+    "level": 6,
+    "type": "Adverb"
+  },
+  {
+    "question": "less",
+    "answer": "ໜ້ອຍ",
+    "difficulty": "Intermediate",
+    "level": 6,
+    "type": "Adverb"
+  },
+  {
+    "question": "quite",
+    "answer": "ຂ້ອນຂ້າງ",
+    "difficulty": "Intermediate",
+    "level": 6,
+    "type": "Adverb"
+  },
+  {
+    "question": "apart",
+    "answer": "ຫ່າງກັນ",
+    "difficulty": "Intermediate",
+    "level": 6,
+    "type": "Adverb"
+  },
+  {
+    "question": "yet",
+    "answer": "ຍັງ",
+    "difficulty": "Intermediate",
+    "level": 6,
+    "type": "Adverb"
+  },
+  {
+    "question": "anyway",
+    "answer": "ເຖິງຢ່າງໃດກໍຕາມ",
+    "difficulty": "Intermediate",
+    "level": 6,
+    "type": "Adverb"
+  },
+  {
+    "question": "nearly",
+    "answer": "ໄກ້ໆກັບ",
+    "difficulty": "Intermediate",
+    "level": 6,
+    "type": "Adverb"
+  },
+  {
+    "question": "somewhere",
+    "answer": "ສະຖານທີີ່ໃດໜຶ່ງ",
+    "difficulty": "Intermediate",
+    "level": 6,
+    "type": "Adverb"
+  },
+  {
+    "question": "probably",
+    "answer": "ອາດຈະ",
+    "difficulty": "Intermediate",
+    "level": 6,
+    "type": "Adverb"
+  },
+  {
+    "question": "rather",
+    "answer": "ຂ້ອນຂ້າງ",
+    "difficulty": "Intermediate",
+    "level": 6,
+    "type": "Adverb"
+  },
+  {
+    "question": "aside",
+    "answer": "ໄປດ້ານໜຶ່ງ",
+    "difficulty": "Intermediate",
+    "level": 6,
+    "type": "Adverb"
+  },
+  {
+    "question": "badly",
+    "answer": "ຢ່າງບໍ່ດີ",
+    "difficulty": "Intermediate",
+    "level": 6,
+    "type": "Adverb"
+  },
+  {
+    "question": "upstairs",
+    "answer": "ຂ້າງເຖິງ",
+    "difficulty": "Intermediate",
+    "level": 6,
+    "type": "Adverb"
+  },
+  {
+    "question": "nowhere",
+    "answer": "ບໍ່ມີທາງ",
+    "difficulty": "Intermediate",
+    "level": 6,
+    "type": "Adverb"
+  },
+  {
+    "question": "twice",
+    "answer": "ສອງຄັ້ງ",
+    "difficulty": "Intermediate",
+    "level": 6,
+    "type": "Adverb"
+  },
+  {
+    "question": "especially",
+    "answer": "ພິເສດ",
+    "difficulty": "Intermediate",
+    "level": 6,
+    "type": "Adverb"
+  },
+  {
+    "question": "recently",
+    "answer": "ວັງມໍໆມານີ້",
+    "difficulty": "Intermediate",
+    "level": 6,
+    "type": "Adverb"
+  },
+  {
+    "question": "afterward",
+    "answer": "ຕໍ່ໄປ",
+    "difficulty": "Intermediate",
+    "level": 6,
+    "type": "Adverb"
+  },
+  {
+    "question": "further",
+    "answer": "ເພີ່ມຕື່ມ",
+    "difficulty": "Intermediate",
+    "level": 6,
+    "type": "Adverb"
+  },
+  {
+    "question": "neither",
+    "answer": "ບໍ່ແມ່ນທັງສອງຢ່າງ",
+    "difficulty": "Intermediate",
+    "level": 6,
+    "type": "Adverb"
+  },
+  {
+    "question": "finally",
+    "answer": "ໃນທີ່ສຸດ",
+    "difficulty": "Intermediate",
+    "level": 6,
+    "type": "Adverb"
+  },
+  {
+    "question": "completely",
+    "answer": "ຢ່າງສຳເລັດສົມບູນ",
+    "difficulty": "Intermediate",
+    "level": 6,
+    "type": "Adverb"
+  },
+  {
+    "question": "forever",
+    "answer": "ຕະຫຼອກໄປ",
+    "difficulty": "Intermediate",
+    "level": 6,
+    "type": "Adverb"
+  },
+  {
+    "question": "hardly",
+    "answer": "ຢ່າງໜັກ",
+    "difficulty": "Intermediate",
+    "level": 6,
+    "type": "Adverb"
+  },
+  {
+    "question": "ahead",
+    "answer": "ໄປໜ້າ",
+    "difficulty": "Intermediate",
+    "level": 6,
+    "type": "Adverb"
+  },
+  {
+    "question": "however",
+    "answer": "ເຖິງຢ່າງໃດກໍຕາມ",
+    "difficulty": "Intermediate",
+    "level": 6,
+    "type": "Adverb"
+  },
+  {
+    "question": "instead",
+    "answer": "ແທນທີ່",
+    "difficulty": "Intermediate",
+    "level": 6,
+    "type": "Adverb"
+  },
+  {
+    "question": "highly",
+    "answer": "ຢ່າງສູງ",
+    "difficulty": "Intermediate",
+    "level": 6,
+    "type": "Adverb"
+  },
+  {
+    "question": "abroad",
+    "answer": "ຢ່າງກ້ວາງຂວາງ",
+    "difficulty": "Intermediate",
+    "level": 6,
+    "type": "Adverb"
+  },
+  {
+    "question": "exactly",
+    "answer": "ແນ່ນອນ",
+    "difficulty": "Intermediate",
+    "level": 6,
+    "type": "Adverb"
+  },
+  {
+    "question": "forward",
+    "answer": "ຢູ່ຂ້າງໜ້າ",
+    "difficulty": "Intermediate",
+    "level": 6,
+    "type": "Adverb"
+  },
+  {
+    "question": "immediately",
+    "answer": "ທັນທີທັນໃດ",
+    "difficulty": "Intermediate",
+    "level": 6,
+    "type": "Adverb"
+  }
+]

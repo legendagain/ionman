@@ -1,16 +1,17 @@
 ﻿<ion-header>
     <ion-navbar>
+        <!--
         <button ion-button menuToggle>
             <ion-icon name="menu"></ion-icon>
         </button>
-        <ion-title>
+        -->
+        <ion-title text-center>
             Let's learn English!
         </ion-title>
     </ion-navbar>
 </ion-header>
 
 <ion-content class="home" padding>
-    
     <ion-card>
         <ion-list>
             <button ion-item (click)="goToMenu()">
@@ -21,7 +22,7 @@
                 <ion-icon name="clipboard" item-left></ion-icon>
                 Your favorite words
             </button>
-            <button ion-item>
+            <button ion-item (click)="goToHelp()">
                 <ion-icon name="help-circle" item-left></ion-icon>
                 Help
             </button>

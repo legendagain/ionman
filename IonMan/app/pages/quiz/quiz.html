@@ -7,7 +7,7 @@
 <ion-content class="quiz" padding>
     <div class="subheader" text-center>
         <span>&nbsp;</span>
-        <h2 style="margin-top: 0px;">Question {{ currentQuestionIndex + 1 }} / {{ questions.length }}</h2>
+        <h2 style="margin-top: 0px;">Question {{ currentQuestionIndex }} / {{ questions.length }}</h2>
         <h3 [class.time-is-running-out]="timeLeft <= 3">{{ timeLeft }}</h3>
         <div class="question">
             {{ currentQuestion.question }}<br />

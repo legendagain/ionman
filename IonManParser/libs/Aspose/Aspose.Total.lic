@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<License>
+  <Data>
+    <LicensedTo>Janison</LicensedTo>
+    <LicenseType>Developer OEM</LicenseType>
+    <LicenseNote>Limited to 1 developer.</LicenseNote>
+    <OrderID>140205185920</OrderID>
+    <OEM>This is a redistributable license</OEM>
+    <Products>
+      <Product>Aspose.Total</Product>
+    </Products>
+    <EditionType>Enterprise</EditionType>
+    <SerialNumber>b1e5c2d2-0d21-4908-8541-c701574ee4a2</SerialNumber>
+    <SubscriptionExpiry>20150205</SubscriptionExpiry>
+    <LicenseVersion>2.2</LicenseVersion>
+  </Data>
+  <Signature>GTD4mAIZ5XLf2sU2Yc7z9msR2a8HlyCNSNu4CGVTlkp3NU+5tqRfgC8MV4b4Eh7imz5xRA5tiHgfqA5Tl1JYoW30WZ1eqmW9qBkHEMqlg8N7maRSjLAaZoTfTjaNm14uiAWcJzTbdP+a7AQdidak9g/gJnsklsTS4LhC44F2z2c=</Signature>
+</License>

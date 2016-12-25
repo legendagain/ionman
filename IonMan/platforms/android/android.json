@@ -33,34 +33,6 @@
                             "count": 1
                         },
                         {
-                            "xml": "<preference name=\"webView\" value=\"org.crosswalk.engine.XWalkWebViewEngine\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<preference name=\"xwalkVersion\" value=\"21+\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<preference name=\"xwalkLiteVersion\" value=\"xwalk_core_library_canary:17+\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<preference name=\"xwalkCommandLine\" value=\"--disable-pull-to-refresh-effect\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<preference name=\"xwalkMode\" value=\"embedded\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<preference name=\"xwalkMultipleApk\" value=\"true\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<preference name=\"android-minSdkVersion\" value=\"16\" />",
-                            "count": 1
-                        },
-                        {
                             "xml": "<feature name=\"Media\"><param name=\"android-package\" value=\"org.apache.cordova.media.AudioHandler\" /></feature>",
                             "count": 1
                         },
@@ -70,6 +42,10 @@
                         },
                         {
                             "xml": "<allow-navigation href=\"cdvfile:*\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"CordovaHttpPlugin\"><param name=\"android-package\" value=\"com.synconset.CordovaHttpPlugin\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -89,14 +65,6 @@
                 "parents": {
                     "/*": [
                         {
-                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />",
-                            "count": 1
-                        },
-                        {
                             "xml": "<uses-permission android:name=\"android.permission.RECORD_AUDIO\" />",
                             "count": 1
                         },
@@ -110,6 +78,12 @@
                         },
                         {
                             "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
                             "count": 1
                         }
                     ]
@@ -142,14 +116,6 @@
         "cordova-plugin-tts": {
             "PACKAGE_NAME": "io.cordova.myappc4709f"
         },
-        "cordova-plugin-crosswalk-webview": {
-            "XWALK_VERSION": "21+",
-            "XWALK_LITEVERSION": "xwalk_core_library_canary:17+",
-            "XWALK_COMMANDLINE": "--disable-pull-to-refresh-effect",
-            "XWALK_MODE": "embedded",
-            "XWALK_MULTIPLEAPK": "true",
-            "PACKAGE_NAME": "io.cordova.myappc4709f"
-        },
         "cordova-plugin-media": {
             "PACKAGE_NAME": "io.cordova.myappc4709f"
         },
@@ -157,6 +123,9 @@
             "PACKAGE_NAME": "io.cordova.myappc4709f"
         },
         "cordova-plugin-file": {
+            "PACKAGE_NAME": "io.cordova.myappc4709f"
+        },
+        "cordova-plugin-http": {
             "PACKAGE_NAME": "io.cordova.myappc4709f"
         }
     },
@@ -369,6 +338,13 @@
                 "cordova"
             ],
             "runs": true
+        },
+        {
+            "file": "plugins/cordova-plugin-http/www/cordovaHTTP.js",
+            "id": "cordova-plugin-http.CordovaHttpPlugin",
+            "clobbers": [
+                "CordovaHttpPlugin"
+            ]
         }
     ],
     "plugin_metadata": {
@@ -380,9 +356,9 @@
         "ionic-plugin-keyboard": "2.2.1",
         "cordova-sqlite-storage": "2.0.0",
         "cordova-plugin-tts": "0.2.3",
-        "cordova-plugin-crosswalk-webview": "2.1.0",
         "cordova-plugin-media": "2.4.1",
         "cordova-plugin-compat": "1.1.0",
-        "cordova-plugin-file": "4.3.1"
+        "cordova-plugin-file": "4.3.1",
+        "cordova-plugin-http": "1.2.0"
     }
 }

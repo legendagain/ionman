@@ -8,9 +8,11 @@
 // App Shared Sass variables belong in app.variables.scss.
 
 @import "../pages/difficulty-menu//difficulty-menu";
+@import "../pages/favorites/favorites";
 @import "../pages/home/home";
-@import "../pages/../pages/level-menu/level-menu";
+@import "../pages/level-menu/level-menu";
 @import "../pages/quiz/quiz";
+@import "../pages/quiz-result/quiz-result";
 
 // Lao fonts: refer to http://www.laoscript.net/download/
 @font-face {

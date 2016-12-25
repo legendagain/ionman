@@ -207,6 +207,13 @@ module.exports = [
             "cordova"
         ],
         "runs": true
+    },
+    {
+        "file": "plugins/cordova-plugin-http/www/cordovaHTTP.js",
+        "id": "cordova-plugin-http.CordovaHttpPlugin",
+        "clobbers": [
+            "CordovaHttpPlugin"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -220,10 +227,10 @@ module.exports.metadata =
     "ionic-plugin-keyboard": "2.2.1",
     "cordova-sqlite-storage": "2.0.0",
     "cordova-plugin-tts": "0.2.3",
-    "cordova-plugin-crosswalk-webview": "2.1.0",
     "cordova-plugin-media": "2.4.1",
     "cordova-plugin-compat": "1.1.0",
-    "cordova-plugin-file": "4.3.1"
+    "cordova-plugin-file": "4.3.1",
+    "cordova-plugin-http": "1.2.0"
 };
 // BOTTOM OF METADATA
 });

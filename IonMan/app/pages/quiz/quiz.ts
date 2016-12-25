@@ -3,6 +3,8 @@ import { NavController, NavParams, Platform } from 'ionic-angular';
 import { MediaPlugin } from 'ionic-native';
 import { Question } from '../../models/question';
 import { Database } from '../../models/database';
+import { QuizRecord } from '../../models/quiz-record';
+import { QuizResultPage } from '../quiz-result/quiz-result';
 
 declare var require: any;
 var _ = require('underscore');
@@ -18,6 +20,7 @@ export class QuizPage {
     isNative: boolean = true;
     difficulty: string;
     level: number;
+    allWords: boolean;
     questions: Question[];
     answers: any[] = [];
 
@@ -32,6 +35,8 @@ export class QuizPage {
     correctAudio: MediaPlugin;
     wrongAudio: MediaPlugin
 
+    quizRecords: QuizRecord[] = [];
+
     constructor(private nav: NavController, private params: NavParams, private platform: Platform) {
         try {
             this.correctAudio = new MediaPlugin(this.getAudioFilename('correct-answer.mp3'));
@@ -43,19 +48,18 @@ export class QuizPage {
         this.difficulty = params.get('difficulty');
         this.level = params.get('level');
         this.timePerQuestion = params.get('time');
-
-        this.initQuestions(params.get('allWords'));
+        this.allWords = params.get('allWords');
+        this.initQuestions();
     }
 
     /* allWords: "true" if user wants to be quizzed on all words
                  "false" if just on non-remembered words */
-    private initQuestions(allWords: boolean) {
-        var questions = Database.questions.data
-            .filter(qns =>
-                (qns.difficulty == this.difficulty && qns.level == this.level) &&
-                (allWords || qns.correctCount < 2)
-            );
-        this.questions = _.shuffle(questions);
+    private initQuestions() {
+        var questions = this.getQuestionsFromDatabase();
+        this.questions = _.chain(questions)
+            .shuffle()
+            .map(qns => _.clone(qns))
+            .value();
         if (questions.length == 0) {
             alert('No questions found!');
             return;
@@ -63,6 +67,15 @@ export class QuizPage {
 
         this.currentQuestionIndex = 0;
         this.showQuestion();
+    }
+
+    private getQuestionsFromDatabase(): Question[] {
+        var questions = Database.questions.data
+            .filter(qns =>
+                (qns.difficulty == this.difficulty && qns.level == this.level) &&
+                (this.allWords || (qns.correctCount || 0) < 2)
+            );
+        return questions;
     }
 
     showQuestion() {
@@ -73,6 +86,7 @@ export class QuizPage {
             // assigns question to page scope
             var question;
             question = this.currentQuestion = this.questions[this.currentQuestionIndex];
+            this.currentQuestionIndex++;
 
             // filters answers to only those that are of the same type
             var answers = this.questions
@@ -136,9 +150,11 @@ export class QuizPage {
             return;
         this.submitActive = false;
 
+        var currQuestion = this.currentQuestion;
+
         this.timer.stop();
         this.timeLeft = 0;
-        var correctCount = this.currentQuestion.correctCount || 0;
+        var correctCount = currQuestion.correctCount || 0;
 
         // correct answer
         if (answer == this.currentQuestion.answer) {
@@ -154,12 +170,14 @@ export class QuizPage {
                 wrongAnswer.isCorrect = false;  // i.e. is wrong
         }
 
-        var correctAnswer = this.answers.filter(ans => ans.text == this.currentQuestion.answer)[0];
+        var correctAnswer = this.answers.filter(ans => ans.text == currQuestion.answer)[0];
         correctAnswer.isCorrect = true;
+        currQuestion.correctCount = correctCount;
 
-        this.currentQuestion.correctCount = correctCount;
-        this.currentQuestionIndex++;
+        // Quiz records will be used to display a "scorecard" to the user
+        this.quizRecords.push(new QuizRecord(currQuestion.question, currQuestion.answer, answer));
 
+        // 2 seconds before activating next question
         var self = this;
         var nextQnsTimer = this.nextQnsTimer = new Timer({
             tick: 1
@@ -167,7 +185,7 @@ export class QuizPage {
         nextQnsTimer.on('end', function () {
             self.showQuestion();
         });
-        nextQnsTimer.start(2.5);
+        nextQnsTimer.start(2);
     }
 
     private getAudioFilename(filename: string): string {
@@ -179,18 +197,43 @@ export class QuizPage {
             audio.play();
     }
 
+    private releaseAudio(audio: MediaPlugin) {
+        if (audio)
+            audio.release();
+    }
+
     toggleFavorite() {
         this.currentQuestion.favorited = !this.currentQuestion.favorited;
     }
 
     endQuiz() {
+        // map this.questions (clones) to actual DB entities
+        var questions = this.getQuestionsFromDatabase();
+        _.map(questions, (e: Question) => {
+            var localQuestion = this.questions.find(qns => qns.question == e.question);
+            if (localQuestion) {
+                // update 2 properties that could have been changed
+                e.correctCount = localQuestion.correctCount;
+                e.favorited = localQuestion.favorited;
+            }
+        });
+
+        // save entities
         Database.saveAll();
-        this.nav.pop();
+
+        // navigate to "scorecard" page
+        this.nav.push(QuizResultPage, {
+            title: this.difficulty + ' ' + this.level,
+            quizRecords: this.quizRecords
+        });
     }
 
     ionViewWillLeave() {
-        // disposes of timers
+        // dispose of timers
         this.timer = this.nextQnsTimer = null;
+        // release MediaPlugin resources
+        this.releaseAudio(this.correctAudio);
+        this.releaseAudio(this.wrongAudio);
     }
 }
 

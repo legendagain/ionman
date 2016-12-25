@@ -1,9 +1,12 @@
-﻿import { SQLite } from 'ionic-native';
+﻿import { Http, Response } from '@angular/http';
+import { Observable } from 'rxjs/Rx';
 import { Question } from './question';
 
 declare var require: any;
 var loki = require('lokijs');
 var localForage = require('localforage');
+
+declare var cordova: any;
 
 export class Database {
     static dbKey: string = "ion-man";
@@ -11,14 +14,18 @@ export class Database {
     public static questions: any;
     public static levels: any;
 
-    static init() {
+    static init(http: Http) {
         // initialize the database
         this.db = new loki('ionman.db');
-        // this.deleteAll();
+        //this.deleteAll();
         this.questions = this.db.addCollection('questions');
         this.levels = this.db.addCollection('levels');
 
-        this.importAll();
+        this.importAll(() => {
+            if (!this.questions.data.length)
+                this.loadData(http);
+        });
+        /*
         if (!this.questions.data.length) {
             var questions: Question[] = [
                 // nouns
@@ -46,7 +53,22 @@ export class Database {
                 this.questions.insert(question);
             }
             this.saveAll();
-        }
+        }*/
+    }
+
+    private static loadData(http: Http) {
+        var fileName = 'build/assets/data.json';
+        http.get(fileName).map((response: Response) =>
+            response.json()
+        ).subscribe(data => {
+            for (let question of data) {
+                this.questions.insert(question);
+            }
+            this.saveAll();
+        }, error => {
+            var errMsg = error.message || error.toString();
+            return Observable.throw(errMsg);
+        });
     }
 
     static saveAll() {
@@ -57,7 +79,7 @@ export class Database {
         });
     }
 
-    static importAll() {
+    static importAll(importCallback: () => void = null) {
         var self = this;
         localForage.getItem(Database.dbKey).then(function (value) {
             console.log('the full database has been retrieved');
@@ -65,6 +87,9 @@ export class Database {
                 self.db.loadJSON(value);
                 self.questions = self.db.getCollection('questions');
             }
+
+            if (importCallback)
+                importCallback();
         }).catch(function (err) {
             console.log('error importing database: ' + err);
         });

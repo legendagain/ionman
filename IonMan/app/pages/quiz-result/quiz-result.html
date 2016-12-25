@@ -1,0 +1,30 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Scorecard for {{ title }}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="quiz-result" padding>
+
+    <ion-item-group>
+
+        <ion-item-divider color="light"><strong>YOUR SCORE:</strong> {{ correctCount }} / {{ quizRecords.length }}</ion-item-divider>
+
+        <div *ngFor="let record of quizRecords; let i = index;">
+
+            <ion-item class="record">
+                <ion-badge class="index">{{ i + 1 }}.</ion-badge>
+                <ion-label>
+                    <div class="line-1">{{ record.question }}: {{ record.answer }}</div>
+                    <div [hidden]="record.isCorrect" class="line-2 wrong">You answered {{ record.yourAnswer }}</div>
+                </ion-label>
+                <ion-avatar class="icon" item-right>
+                    <ion-icon [hidden]="!record.isCorrect" name="checkmark" class="correct" item-right></ion-icon>
+                    <ion-icon [hidden]="record.isCorrect" name="close" class="wrong" item-right></ion-icon>
+                </ion-avatar>
+            </ion-item>
+
+        </div>
+    </ion-item-group>
+
+</ion-content>

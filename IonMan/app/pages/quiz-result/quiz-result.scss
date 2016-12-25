@@ -1,0 +1,30 @@
+.quiz-result {
+    .record {
+        .correct {
+            color: #59d804;
+        }
+
+        .wrong {
+            color: #d10e0e;
+        }
+
+        .index {
+            font-size: 1.25rem;
+            margin-right: 4px;
+            vertical-align: central;
+        }
+
+        .line-1 {
+            font-size: 1.4rem;
+        }
+
+        .line-2 {
+            font-size: 1.1rem;
+        }
+
+        .icon {
+            font-size: 2.0rem;
+            margin: 0;
+        }
+    }
+}

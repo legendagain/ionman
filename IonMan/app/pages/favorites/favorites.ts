@@ -13,15 +13,17 @@ export class FavoritesPage {
     levels: any[];
 
     constructor(private nav: NavController) {
-        var questions = Database.questions.data;
+        var questions = Database.questions.data
+            .filter(qns => qns.favorited);
         this.levels = _.chain(questions)
             .groupBy(qns => qns.difficulty + ' ' + qns.level)
             .map((value, key) => {
                 return {
                     title: key,
-                    questions: value,
+                    questions: _.sortBy(value, 'question'),
                 };
-            });
+            })
+            .value();
         console.log('showing favorites...');
             /*.sortBy(level => {
 

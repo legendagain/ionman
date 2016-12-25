@@ -6,11 +6,17 @@
 
 <ion-content class="favorites" padding>
 
-    <ion-item-group *ngFor="let level of levels">
+    <ion-item-group *ngFor="let level of levels"
+                    [hidden]="levels.length == 0">
         <ion-item-divider color="light">{{ level.title }}</ion-item-divider>
-        <div *ngFor="let question of levels.questions">
-            <ion-item>blablabla</ion-item>
+        <div *ngFor="let qns of level.questions">
+            <ion-item>{{ qns.question }}: {{ qns.answer }}</ion-item>
         </div>
     </ion-item-group>
+
+    <h3 [hidden]="levels.length != 0" text-center>
+        You have no favorites!<br /><br />
+        Tap on the <ion-icon name="heart-outline"></ion-icon> to favorite a question!
+    </h3>
 
 </ion-content>

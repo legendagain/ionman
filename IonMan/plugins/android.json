@@ -10,14 +10,6 @@
         "cordova-plugin-console": {
             "PACKAGE_NAME": "io.cordova.myappc4709f"
         },
-        "cordova-plugin-crosswalk-webview": {
-            "XWALK_VERSION": "21+",
-            "XWALK_LITEVERSION": "xwalk_core_library_canary:17+",
-            "XWALK_COMMANDLINE": "--disable-pull-to-refresh-effect",
-            "XWALK_MODE": "embedded",
-            "XWALK_MULTIPLEAPK": "true",
-            "PACKAGE_NAME": "io.cordova.myappc4709f"
-        },
         "cordova-plugin-device": {
             "PACKAGE_NAME": "io.cordova.myappc4709f"
         },
@@ -40,6 +32,9 @@
             "PACKAGE_NAME": "io.cordova.myappc4709f"
         },
         "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "io.cordova.myappc4709f"
+        },
+        "cordova-plugin-http": {
             "PACKAGE_NAME": "io.cordova.myappc4709f"
         }
     },
