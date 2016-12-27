@@ -1,3 +1,4 @@
+/// <reference path="../../models/quiz-record.ts" />
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { QuizPage } from '../quiz/quiz';
@@ -25,15 +26,23 @@ export class LevelMenuPage {
         var questions = Database.questions.data
             .filter(qns => qns.difficulty == this.difficulty);
 
-        var levels = questions.map(qns => qns.level);
-        this.levels = _.uniq(levels).map(level =>
-            new Level(this.difficulty, level, questions.filter(qns => qns.level == level))
-        );
+        this.levels = Database.levels.data.map(e => {
+            var level = e.number;
+            return new Level(this.difficulty,
+                level,
+                questions.filter(qns => qns.level == level),
+                e.unlocked);
+        });
 
         this.timeChoices = [{ time: 15 }, { time: 10 }, { time: 5 }];
     }
 
     selectLevel(selection: number) {
+        // check if level has been unlocked before proceeding
+        var userSelection = _.find(this.levels, level => level.number == selection);
+        if (!userSelection.unlocked)
+            return;
+
         // user taps on already selected level, de-selecting it
         var selectedLevel = this.selectedLevel;
         if (selectedLevel && selectedLevel.number == selection) {
@@ -47,7 +56,7 @@ export class LevelMenuPage {
         for (let level of levels) {
             level.selected = false;
         }
-        this.selectedLevel = levels.filter(level => level.number == selection)[0];
+        this.selectedLevel = userSelection;
         this.isLevelSelected = this.selectedLevel.selected = true;
     }
 
@@ -81,7 +90,6 @@ export class LevelMenuPage {
 }
 
 class Level {
-    unlocked: boolean = true;
     correctQuestions: number = 0;
     totalQuestions: number = 0;
     selected: boolean = false;
@@ -89,9 +97,9 @@ class Level {
     constructor(
         difficulty: string,
         public number: number,
-        questions: Question[]
+        questions: Question[],
+        public unlocked: boolean = false
     ) {
-        this.unlocked = Database.isLevelUnlocked(difficulty, number);
         this.correctQuestions = questions.filter(qns => qns.correctCount >= 2).length;
         this.totalQuestions = questions.length;
     }

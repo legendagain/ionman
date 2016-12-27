@@ -10,7 +10,8 @@
         <span class="subheader">LEVEL SELECTION</span>
         <ion-list *ngFor="let level of levels">
             <button ion-item (click)="selectLevel(level.number)"
-                    [class.level-selected]="level.selected">
+                    [class.level-selected]="level.selected"
+                    [class.locked]="!level.unlocked">
                 <ion-row>
                     Level {{ level.number }}
                 </ion-row>

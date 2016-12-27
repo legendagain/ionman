@@ -1,6 +1,7 @@
 ﻿import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Rx';
 import { Question } from './question';
+import { Level } from './level';
 
 declare var require: any;
 var loki = require('lokijs');
@@ -18,46 +19,17 @@ export class Database {
     static init(http: Http) {
         // initialize the database
         this.db = new loki('ionman.db');
-        //this.deleteAll();
+        // this.deleteAll();    -- uncomment for testing
         this.questions = this.db.addCollection('questions');
         this.levels = this.db.addCollection('levels');
 
-        this.importAll(() => {
+        this.loadDatabase(() => {
             if (!this.questions.data.length)
-                this.loadData(http);
+                this.importData(http);
         });
-        /*
-        if (!this.questions.data.length) {
-            var questions: Question[] = [
-                // nouns
-                new Question('hello', 'sabaidee', 'Beginner', 1, 'noun'),
-                new Question('bye-bye', 'lakon', 'Beginner', 1, 'noun'),
-                new Question('Laotian', 'khon lao', 'Beginner', 1, 'noun'),
-                new Question('house', 'baan', 'Beginner', 1, 'noun'),
-                new Question('fried rice', 'khaaw phad', 'Beginner', 1, 'noun'),
-                new Question('food', 'aahaan', 'Beginner', 1, 'noun'),
-                new Question('teacher', 'ajaan', 'Beginner', 1, 'noun'),
-                new Question('book', 'nangsuu', 'Beginner', 1, 'noun'),
-                // adjectives
-                new Question('beautiful', 'ngarm', 'Beginner', 1, 'adjective'),
-                new Question('fat', 'dui', 'Beginner', 1, 'adjective'),
-                new Question('dark', 'dum', 'Beginner', 1, 'adjective'),
-                new Question('good', 'keng', 'Beginner', 1, 'adjective'),
-                // verbs
-                new Question('study', 'rian', 'Beginner', 2, 'adjective'),
-                new Question('go', 'pai', 'Beginner', 2, 'adjective'),
-                new Question('sleep', 'norn lup', 'Beginner', 2, 'adjective'),
-                new Question('eat', 'kin', 'Beginner', 2, 'adjective'),
-            ];
-
-            for (let question of questions) {
-                this.questions.insert(question);
-            }
-            this.saveAll();
-        }*/
     }
 
-    private static loadData(http: Http) {
+    private static importData(http: Http) {
         var fileName = 'build/assets/data.json';
         http.get(fileName).map((response: Response) =>
             response.json()
@@ -75,6 +47,7 @@ export class Database {
             // populates level
             if (data.levels && data.levels.length) {
                 for (let level of data.levels) {
+                    level.unlocked = false;
                     this.levels.insert(level);
                 }
             }
@@ -96,19 +69,20 @@ export class Database {
         });
     }
 
-    static importAll(importCallback: () => void = null) {
+    static loadDatabase(importCallback: () => void = null) {
         var self = this;
         localForage.getItem(Database.dbKey).then(function (value) {
-            console.log('the full database has been retrieved');
+            console.log('Successfully loaded database.');
             if (value) {
                 self.db.loadJSON(value);
                 self.questions = self.db.getCollection('questions');
+                self.levels = self.db.getCollection('levels');
             }
 
             if (importCallback)
                 importCallback();
         }).catch(function (err) {
-            console.log('error importing database: ' + err);
+            console.log('Error loading database: ' + err);
         });
     }
 
@@ -120,9 +94,16 @@ export class Database {
         });
     }
 
-    static isLevelUnlocked(difficulty: string, level: number) {
-        var levels = this.levels.data.filter(e => e.difficulty == difficulty && e.number == level);
-        return true;
-        // return levels.length ? levels[0].unlocked : false;
+    static getNextLevel(difficulty: string, level: number): Level {
+        var isNext = false;
+        for (let e of _.sortBy(this.levels.data, 'index')) {
+            if (isNext)
+                return e;
+            if (e.difficulty == difficulty && e.number == level) {
+                isNext = true;
+            }
+        }
+
+        return null;
     }
 }

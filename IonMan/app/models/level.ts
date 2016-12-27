@@ -5,5 +5,6 @@
         public number: number,
         public difficulty: string = '',
         public unlocked: boolean = false,
+        public index: number = -1
     ) { }
 }

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Alert, NavController, NavParams, Platform } from 'ionic-angular';
+import { Alert, Modal, NavController, NavParams, Platform } from 'ionic-angular';
 import { MediaPlugin } from 'ionic-native';
 import { Question } from '../../models/question';
 import { Database } from '../../models/database';
@@ -238,14 +238,37 @@ export class QuizPage {
             }
         });
 
+        // determines if next level can be unlocked
+        var unlockedNext = this.evaluateQuiz();
+
         // save entities
         Database.saveAll();
 
-        // navigate to "scorecard" page
-        this.nav.push(QuizResultPage, {
+        // shows "scorecard" page in modal window
+        let modal = Modal.create(QuizResultPage, {
             title: this.difficulty + ' ' + this.level,
-            quizRecords: this.quizRecords
+            quizRecords: this.quizRecords,
+            unlockedNext: unlockedNext
         });
+        modal.onDismiss(() => this.nav.pop());
+        this.nav.present(modal);
+    }
+
+    /* returns whether next quiz is unlocked
+       if next quiz was unlocked in a previous attempt, then it will always return false */ 
+    private evaluateQuiz(): boolean {
+        var nextLevel = Database.getNextLevel(this.difficulty, this.level);
+        if (nextLevel && !nextLevel.unlocked) {
+            let passingRate = 0.9;  // i.e. 90%
+            var qtyCorrect = this.questions.filter(qns => qns.correctCount >= 2).length;
+            var score = qtyCorrect / this.questions.length;
+            if (score >= passingRate) {
+                nextLevel.unlocked = true;
+                return true;
+            }
+        }
+
+        return false;
     }
 
     ionViewWillLeave() {
