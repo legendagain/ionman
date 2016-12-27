@@ -1,34 +1,5 @@
-.quiz {
-    .subheader {
-        border-color: #0c60ee;
-        background-color: $secondary;
-        color: #fff;
-        padding: 1rem;
-
-        .question {
-            font-size: 1.8rem;
-            margin-bottom: 1.0rem;
-        }
-
-        .time-is-running-out {
-            color: #f53d3d;
-            font-weight: bold;
-        }
-
-        .favorited {
-            color: #fc3592;
-        }
-    }
-
-    .answers {
-        .correct {
-            color: #FFF;
-            background-color: #59d804;
-        }
-
-        .wrong {
-            color: #FFF;
-            background-color: #d10e0e;
-        }
+.favorites {
+    .english {
+        color: #24127c;
     }
 }

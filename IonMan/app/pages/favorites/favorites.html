@@ -10,7 +10,7 @@
                     [hidden]="levels.length == 0">
         <ion-item-divider color="light">{{ level.title }}</ion-item-divider>
         <div *ngFor="let qns of level.questions">
-            <ion-item>{{ qns.question }}: {{ qns.answer }}</ion-item>
+            <ion-item><span class="english">{{ qns.question }}:</span> {{ qns.answer }}</ion-item>
         </div>
     </ion-item-group>
 

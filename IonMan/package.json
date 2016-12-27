@@ -24,6 +24,7 @@
     "rxjs": "5.0.0-beta.6",
     "sequelize": "^3.27.0",
     "sqlite3": "^3.1.8",
+    "timer.js": "^1.0.4",
     "underscore": "^1.8.3",
     "zone.js": "^0.6.12"
   },

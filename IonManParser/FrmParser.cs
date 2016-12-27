@@ -1,14 +1,10 @@
 ﻿using Aspose.Cells;
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using MoreLinq;
 
 namespace IonManParser
 {
@@ -94,7 +90,19 @@ namespace IonManParser
                     row++;
                 }
 
-                var json = JsonConvert.SerializeObject(list);
+                var dataModel = new DataModel()
+                {
+                    Questions = list,
+                    Levels = list.DistinctBy(qns => string.Format("{0} {1}", qns.Difficulty, qns.Level))
+                        .Select((qns, ix) => new LevelModel
+                        {
+                            Difficulty = qns.Difficulty,
+                            Number = qns.Level,
+                            Index = ix
+                        }).ToList()
+                };
+
+                var json = LowercaseJsonSerializer.SerializeObject(dataModel);
                 txtResult.Text = json;
             }
             catch (Exception ex)
@@ -105,6 +113,12 @@ namespace IonManParser
     }
 }
 
+class DataModel
+{
+    public IEnumerable<QuestionModel> Questions { get; set; }
+    public IEnumerable<LevelModel> Levels { get; set; }
+}
+
 class QuestionModel
 {
     public string Question { get; set; }
@@ -112,4 +126,11 @@ class QuestionModel
     public string Difficulty { get; set; }
     public int Level { get; set; }
     public string Type { get; set; }
+}
+
+class LevelModel
+{
+    public string Difficulty { get; set; }
+    public int Number { get; set; }
+    public int Index { get; set; }
 }

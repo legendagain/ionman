@@ -5,6 +5,7 @@ import { Question } from './question';
 declare var require: any;
 var loki = require('lokijs');
 var localForage = require('localforage');
+var _ = require('underscore');
 
 declare var cordova: any;
 
@@ -61,9 +62,25 @@ export class Database {
         http.get(fileName).map((response: Response) =>
             response.json()
         ).subscribe(data => {
-            for (let question of data) {
-                this.questions.insert(question);
+            // clears database before populating with new data
+            this.deleteAll();
+
+            // populates questions
+            if (data.questions) {
+                for (let question of data.questions) {
+                    this.questions.insert(question);
+                }
             }
+
+            // populates level
+            if (data.levels && data.levels.length) {
+                for (let level of data.levels) {
+                    this.levels.insert(level);
+                }
+            }
+            this.levels.data[0].unlocked = true;
+
+            // commits changes to database
             this.saveAll();
         }, error => {
             var errMsg = error.message || error.toString();

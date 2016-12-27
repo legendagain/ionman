@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Http } from '@angular/http';
-import { AlertController, NavController } from 'ionic-angular';
+import { Alert, NavController } from 'ionic-angular';
 import { DifficultyMenuPage } from '../difficulty-menu/difficulty-menu';
 import { FavoritesPage } from '../favorites/favorites';
 import { Database } from '../../models/database';
@@ -9,10 +9,7 @@ import { Database } from '../../models/database';
     templateUrl: 'build/pages/home/home.html'
 })
 export class HomePage {
-    constructor(
-        private nav: NavController,
-        private alertCtrl: AlertController,
-        private http: Http) { }
+    constructor(private nav: NavController, private http: Http) { }
 
     onLink(url: string) {
         window.open(url);
@@ -27,12 +24,12 @@ export class HomePage {
     }
 
     goToHelp() {
-        let alert = this.alertCtrl.create({
+        let alert = Alert.create({
             title: 'Help',
-            subTitle: 'Tap on "Let\'s play!", select your difficulty, level, time per question, and you\'re ready to play!\n\n\
-If you have any questions feel free to e-mail mathieu.awm@gmail.com or ogawa@eedu.jp',
+            subTitle: 'Tap on "Let\'s play!", select your difficulty, level, time per question, and you\'re ready to play!<br /><br />\
+If you have any questions feel free to e-mail <a href="mailto:mathieu.awm@gmail.com">Matthew</a> or <a href="mailto:ogawa@eedu.jp">Satoshi</a>.',
             buttons: ['OK']
         });
-        alert.present();
+        this.nav.present(alert);
     }
 }

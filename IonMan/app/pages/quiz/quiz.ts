@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, Platform } from 'ionic-angular';
+import { Alert, NavController, NavParams, Platform } from 'ionic-angular';
 import { MediaPlugin } from 'ionic-native';
 import { Question } from '../../models/question';
 import { Database } from '../../models/database';
@@ -41,9 +41,13 @@ export class QuizPage {
         try {
             this.correctAudio = new MediaPlugin(this.getAudioFilename('correct-answer.mp3'));
             this.wrongAudio = new MediaPlugin(this.getAudioFilename('wrong-answer.mp3'));
-        } catch (Exception) { }
+        } catch (Exception) {
+            this.isNative = false;
+        }
 
-        this.isNative = !platform.is('core');
+        platform.pause.subscribe(() => this.toggleTimers(true, this.timer, this.nextQnsTimer));
+        platform.resume.subscribe(() => this.toggleTimers(false, this.timer, this.nextQnsTimer));
+
         this.currentQuestion = Question.emptyQuestion();
         this.difficulty = params.get('difficulty');
         this.level = params.get('level');
@@ -61,7 +65,12 @@ export class QuizPage {
             .map(qns => _.clone(qns))
             .value();
         if (questions.length == 0) {
-            alert('No questions found!');
+            let alert = Alert.create({
+                title: '',
+                subTitle: 'No questions found!',
+                buttons: ['OK']
+            });
+            this.nav.present(alert);
             return;
         }
 
@@ -142,6 +151,17 @@ export class QuizPage {
         });
 
         timer.start(this.timePerQuestion);
+    }
+
+    private toggleTimers(pause: boolean, ...timers: any[]) {
+        for (let timer of timers) {
+            if (timer) {
+                if (pause && timer.getStatus() == 'started')
+                    timer.pause();
+                else if (timer.getStatus() == 'paused')
+                    timer.start();
+            }
+        }
     }
 
     submitActive: boolean = true;
