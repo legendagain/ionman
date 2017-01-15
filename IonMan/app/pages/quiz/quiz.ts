@@ -5,6 +5,7 @@ import { Question } from '../../models/question';
 import { Database } from '../../models/database';
 import { QuizRecord } from '../../models/quiz-record';
 import { QuizResultPage } from '../quiz-result/quiz-result';
+import { ProgressBarComponent } from '../../components/progress-bar/progress-bar';
 
 declare var require: any;
 var _ = require('underscore');
@@ -14,19 +15,22 @@ declare var cordova: any;
 declare var TTS: any;
 
 @Component({
-    templateUrl: 'build/pages/quiz/quiz.html'
+    templateUrl: 'build/pages/quiz/quiz.html',
+    directives: [ProgressBarComponent]
 })
 export class QuizPage {
     isNative: boolean = true;
     difficulty: string;
     level: number;
     allWords: boolean;
+    numberOfWords: number;
     questions: Question[];
     answers: any[] = [];
 
     timePerQuestion: number;
     timeLeft: number;
     timer: any;
+    correct: boolean = false;
     nextQnsTimer: any;
 
     currentQuestion: Question;
@@ -53,6 +57,7 @@ export class QuizPage {
         this.level = params.get('level');
         this.timePerQuestion = params.get('time');
         this.allWords = params.get('allWords');
+        this.numberOfWords = params.get('numberOfWords');
         this.initQuestions();
     }
 
@@ -61,7 +66,6 @@ export class QuizPage {
     private initQuestions() {
         var questions = this.getQuestionsFromDatabase();
         this.questions = _.chain(questions)
-            .shuffle()
             .map(qns => _.clone(qns))
             .value();
         if (questions.length == 0) {
@@ -78,12 +82,28 @@ export class QuizPage {
         this.showQuestion();
     }
 
-    private getQuestionsFromDatabase(): Question[] {
+    private getQuestionsFromDatabase(questionIds?: number[]): Question[] {
+        if (questionIds != null)
+            return Database.questions.data.filter(qns => _.contains(questionIds, qns.id));
+
         var questions = Database.questions.data
-            .filter(qns =>
-                (qns.difficulty == this.difficulty && qns.level == this.level) &&
-                (this.allWords || (qns.correctCount || 0) < 2)
-            );
+            .filter(qns => (qns.difficulty == this.difficulty && qns.level == this.level));
+        if (this.allWords) {
+            questions = _.sample(questions, this.numberOfWords);
+        }
+        else {
+            var qnsArray = _.partition(questions, qns => (qns.correctCount || 0) < 2);
+            // qnsArray[0]: non-remembered words; qnsArray[1]: remembered words
+            var wordDifference = this.numberOfWords - qnsArray[0].length;
+            if (wordDifference > 0)
+                questions = _.chain(qnsArray[1])
+                    .sample(wordDifference)
+                    .union(qnsArray[0])
+                    .shuffle()
+                    .value();
+            else
+                questions = _.sample(qnsArray[0], this.numberOfWords);
+        }
         return questions;
     }
 
@@ -135,22 +155,24 @@ export class QuizPage {
 
     startTimer() {
         var self = this;
-        self.timeLeft = this.timePerQuestion;
+        if (self.timePerQuestion > 0) {
+            self.timeLeft = self.timePerQuestion;
 
-        var timer = self.timer;
-        if (timer == null) {
-            timer = self.timer = new Timer({
-                tick: 1,
-                ontick: function (milliseconds) {
-                    self.timeLeft = Math.round(milliseconds / 1000);
-                }
+            var timer = self.timer;
+            if (timer == null) {
+                timer = self.timer = new Timer({
+                    tick: 0.1,
+                    ontick: function (milliseconds) {
+                        self.timeLeft = milliseconds / 1000;
+                    }
+                });
+            }
+            timer.on('end', function () {
+                self.submit('Time up');
             });
-        }
-        timer.on('end', function () {
-            self.submit('Time up.');
-        });
 
-        timer.start(this.timePerQuestion);
+            timer.start(this.timePerQuestion);
+        }
     }
 
     private toggleTimers(pause: boolean, ...timers: any[]) {
@@ -172,12 +194,15 @@ export class QuizPage {
 
         var currQuestion = this.currentQuestion;
 
-        this.timer.stop();
-        this.timeLeft = 0;
+        if (this.timer) {
+            this.timer.stop();
+            this.timeLeft = 0;
+        }
         var correctCount = currQuestion.correctCount || 0;
 
         // correct answer
-        if (answer == this.currentQuestion.answer) {
+        this.correct = answer == this.currentQuestion.answer;
+        if (this.correct) {
             this.playAudio(this.correctAudio);
             correctCount++;
         }
@@ -205,7 +230,7 @@ export class QuizPage {
         nextQnsTimer.on('end', function () {
             self.showQuestion();
         });
-        nextQnsTimer.start(2);
+        nextQnsTimer.start(1.5);
     }
 
     private getAudioFilename(filename: string): string {
@@ -227,8 +252,10 @@ export class QuizPage {
     }
 
     endQuiz() {
+        var questionIds = _.pluck(this.questions, 'id');
+        var questions = this.getQuestionsFromDatabase(questionIds);
+
         // map this.questions (clones) to actual DB entities
-        var questions = this.getQuestionsFromDatabase();
         _.map(questions, (e: Question) => {
             var localQuestion = this.questions.find(qns => qns.question == e.question);
             if (localQuestion) {
@@ -255,7 +282,7 @@ export class QuizPage {
     }
 
     /* returns whether next quiz is unlocked
-       if next quiz was unlocked in a previous attempt, then it will always return false */ 
+       if next quiz was unlocked in a previous attempt, then it will always return false */
     private evaluateQuiz(): boolean {
         var nextLevel = Database.getNextLevel(this.difficulty, this.level);
         if (nextLevel && !nextLevel.unlocked) {

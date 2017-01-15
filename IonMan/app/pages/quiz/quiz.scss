@@ -1,18 +1,28 @@
 .quiz {
     .subheader {
         border-color: #0c60ee;
-        background-color: $secondary;
-        color: #fff;
-        padding: 1rem;
+        padding: 1.5rem;
+
+        .icon {
+            margin-left: 12px;
+        }
 
         .question {
-            font-size: 1.8rem;
             margin-bottom: 1.0rem;
+
+            .word {
+                font-size: 3.6rem;
+            }
         }
 
         .time-is-running-out {
             color: #f53d3d;
             font-weight: bold;
+        }
+
+        .heart {
+            color: #727272;
+            font-size: 2.4rem;
         }
 
         .favorited {
@@ -21,6 +31,8 @@
     }
 
     .answers {
+        font-size: 55px !important;
+
         .correct {
             color: #FFF;
             background-color: #59d804;
@@ -29,6 +41,44 @@
         .wrong {
             color: #FFF;
             background-color: #d10e0e;
+        }
+
+        button {
+            font-size: 2.4rem;
+            background-color: $primary;
+            margin: 12px;
+            color: #FFF;
+        }
+    }
+
+    .correct {
+        color: #59d804;
+    }
+
+    .wrong {
+        color: #d10e0e;
+    }
+
+    .symbol {
+        position: fixed;
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top: 20%;
+        text-align: center;
+        max-height: 25%;
+        font-size: 18em;
+
+        .correct {
+            color: #59d804;
+            -webkit-text-stroke: 3px #000;
+        }
+
+        .wrong {
+            color: #d10e0e;
+            -webkit-text-stroke: 3px #000;
         }
     }
 }

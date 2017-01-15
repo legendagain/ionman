@@ -1,4 +1,4 @@
-<ion-header>
+﻿<ion-header>
     <ion-navbar>
         <ion-title>{{ difficulty }} {{ level }}</ion-title>
     </ion-navbar>
@@ -6,14 +6,17 @@
 
 <ion-content class="quiz" padding>
     <div class="subheader" text-center>
-        <span>&nbsp;</span>
-        <h2 style="margin-top: 0px;">Question {{ currentQuestionIndex }} / {{ questions.length }}</h2>
-        <h3 [class.time-is-running-out]="timeLeft <= 3">{{ timeLeft }}</h3>
-        <div class="question">
-            {{ currentQuestion.question }}<br />
-            <ion-icon name="volume-up" (click)="pronounce()"></ion-icon>
+        <div class="title">
+            <span>Question {{ currentQuestionIndex }} / {{ questions.length }}</span>
+            <ion-icon class="icon" name="volume-up" (click)="pronounce()"></ion-icon>
         </div>
-        <ion-icon [class.favorited]="currentQuestion.favorited"
+        <progress-bar *ngIf="timePerQuestion > 0" [timeLeft]="timeLeft" [timeGiven]="timePerQuestion"></progress-bar>
+        <div class="question">
+            <span class="word">{{ currentQuestion.question }}</span>
+
+        </div>
+        <ion-icon class="heart"
+                  [class.favorited]="currentQuestion.favorited"
                   [name]="currentQuestion.favorited ? 'heart' : 'heart-outline'"
                   (click)="toggleFavorite()"></ion-icon>
     </div>
@@ -28,11 +31,16 @@
                     </button>
                 </div>
             </div>
-            <button ion-item (click)="submit(answer)">
-                I don't know
+            <button ion-item (click)="submit('Don\'t know')">
+                ຂ້ອຍບໍ່ຮູ້ເລີຍ <!-- I don't know -->
             </button>
         </ion-list>
 
     </ion-card>
+
+    <div class="symbol" [hidden]="timeLeft != 0">
+        <ion-icon name="checkmark" [hidden]="!correct" class="correct"></ion-icon>
+        <ion-icon name="close" [hidden]="correct" class="wrong"></ion-icon>
+    </div>
 
 </ion-content>

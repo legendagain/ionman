@@ -3,6 +3,7 @@ import { Http } from '@angular/http';
 import { Alert, NavController } from 'ionic-angular';
 import { DifficultyMenuPage } from '../difficulty-menu/difficulty-menu';
 import { FavoritesPage } from '../favorites/favorites';
+import { ProgressPage } from '../progress/progress';
 import { Database } from '../../models/database';
 
 @Component({
@@ -21,6 +22,10 @@ export class HomePage {
 
     goToFavorites() {
         this.nav.push(FavoritesPage);
+    }
+
+    goToProgress() {
+        this.nav.push(ProgressPage);
     }
 
     goToHelp() {

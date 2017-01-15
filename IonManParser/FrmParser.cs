@@ -48,6 +48,7 @@ namespace IonManParser
                 row++;
                 col = 0;
                 int retryCount = 0;
+                int entryCount = 0;
 
                 var list = new List<QuestionModel>();
                 while (retryCount < 3)
@@ -86,7 +87,11 @@ namespace IonManParser
                     }
 
                     if (retryCount == 0)
+                    {
+                        model.Id = entryCount;
                         list.Add(model);
+                        entryCount++;
+                    }
                     row++;
                 }
 
@@ -121,6 +126,7 @@ class DataModel
 
 class QuestionModel
 {
+    public int Id { get; set; }
     public string Question { get; set; }
     public string Answer { get; set; }
     public string Difficulty { get; set; }

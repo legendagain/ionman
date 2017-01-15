@@ -5,7 +5,7 @@
         font-weight: bold;
     }
 
-    .level-selected {
+    .selected {
         color: #FFF;
         background-color: $secondary;
     }
@@ -14,7 +14,19 @@
         background-color: #e8e8e8;
     }
 
+    .time-button {
+        font-size: 1.3rem;
+        text-align: center;
+        padding: 2px;
+    }
+
     .question-counter {
         font-size: 1.2rem;
+    }
+
+    .play-button {
+        margin-top: 2rem;
+        background-color: $primary;
+        color: #FFF;
     }
 }

@@ -1,0 +1,16 @@
+﻿<ion-header>
+    <ion-navbar>
+        <ion-title>Your progress
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="progress" padding>
+    <ion-slides *ngFor="let level of levels">
+        <ion-slide>
+            {{ level.difficulty }} {{ level.number }}
+            <progress-chart [correctPercentage]="level.correctPercentage"></progress-chart>
+        </ion-slide>
+    </ion-slides>
+
+</ion-content>

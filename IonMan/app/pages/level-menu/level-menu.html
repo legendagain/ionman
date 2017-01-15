@@ -1,4 +1,4 @@
-<ion-header>
+﻿<ion-header>
     <ion-navbar>
         <ion-title>{{ difficulty }}</ion-title>
     </ion-navbar>
@@ -7,13 +7,13 @@
 <ion-content class="level-menu" padding>
 
     <ion-card>
-        <span class="subheader">LEVEL SELECTION</span>
+        <span class="subheader">ກົດເລືອກລະດັບ</span>
         <ion-list *ngFor="let level of levels">
             <button ion-item (click)="selectLevel(level.number)"
-                    [class.level-selected]="level.selected"
+                    [class.selected]="level.selected"
                     [class.locked]="!level.unlocked">
                 <ion-row>
-                    Level {{ level.number }}
+                    ລະດັບທີ່ {{ level.number }}
                 </ion-row>
                 <ion-row class="question-counter">
                     {{ level.correctQuestions }} / {{ level.totalQuestions }}
@@ -24,27 +24,50 @@
 
     <div [hidden]="!isLevelSelected">
         <ion-card>
-            <span class="subheader">TIME PER QUESTION</span>
+            <span class="subheader">ເລືອກເວລາທີ່ຈະໃຊ້ຫຼິ້ນ <!--TIME PER QUESTION --></span>
             <ion-row>
-                <ion-col width-33 *ngFor="let choice of timeChoices">
-                    <button ion-item (click)="selectTime(choice.time)"
-                            [class.level-selected]="choice.selected">
-                        {{ choice.time }}s
+                <ion-col width-25 *ngFor="let choice of timeChoices">
+                    <button class="time-button"
+                            ion-item (click)="selectTime(choice.time)"
+                            [class.selected]="choice.selected"
+                            [ngSwitch]="choice.time">
+                        <span *ngSwitchCase="0 - 1">∞</span>
+                        <span *ngSwitchDefault>{{ choice.time }}ວິນາທີ</span>
                     </button>
                 </ion-col>
             </ion-row>
         </ion-card>
 
         <ion-card>
-            <span class="subheader">WORDS SELECTION</span>
+            <span class="subheader">ຄໍາສັບ</span>
             <ion-list>
-                <button ion-item (click)="goToQuiz(true)">
+                <button ion-item (click)="selectWords(true)"
+                        [class.selected]="allWords == true">
                     All words
                 </button>
-                <button ion-item (click)="goToQuiz(false)">
+                <button ion-item (click)="selectWords(false)"
+                        [class.selected]="allWords == false">
                     Only non-remembered words
                 </button>
             </ion-list>
+        </ion-card>
+
+        <ion-card>
+            <span class="subheader">ຂ້ອຍບໍ່ໄດ ຫລື ຂ້ອຍບໍ່ຮູ້</span>
+            <ion-row>
+                <ion-col width-33 *ngFor="let choice of wordNumberChoices">
+                    <button ion-item (click)="selectNumberOfWords(choice.number)"
+                            [class.selected]="choice.selected">
+                        {{ choice.number }}
+                    </button>
+                </ion-col>
+            </ion-row>
+        </ion-card>
+
+        <ion-card>
+            <button class="play-button" ion-item (click)="goToQuiz()">
+                <ion-icon name="game-controller-b" item-left></ion-icon> ເລີ່ມ!
+            </button>
         </ion-card>
     </div>
 

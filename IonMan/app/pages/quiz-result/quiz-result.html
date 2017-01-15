@@ -11,10 +11,29 @@
 </ion-header>
 
 <ion-content class="quiz-result" padding>
+    <div class="congratulate" text-center>
+        <span class="score"><strong>YOUR SCORE:</strong> {{ correctCount }} / {{ quizRecords.length }}</span><br />
+        <span class="rating"><strong>YOUR RATING:</strong> {{ correctPercentage }}%</span>
+        <div class="image">
+            <div *ngIf="correctPercentage >= 66">
+                <img src="build/assets/images/good.jpg" />
+                You're awesome!
+            </div>
+            <div *ngIf="correctPercentage >= 33 && correctPercentage < 66">
+                <img src="build/assets/images/average.jpg" />
+                You're pretty good, huh?
+            </div>
+            <div *ngIf="correctPercentage < 33">
+                <img src="build/assets/images/poor.jpg" />
+                You're getting there!
+            </div>
+        </div>
+    </div>
+
 
     <ion-item-group>
 
-        <ion-item-divider color="light"><strong>YOUR SCORE:</strong> {{ correctCount }} / {{ quizRecords.length }}</ion-item-divider>
+        <ion-item-divider color="light">YOUR ANSWERS</ion-item-divider>
 
         <div *ngFor="let record of quizRecords; let i = index;">
 
@@ -22,7 +41,12 @@
                 <ion-badge class="index">{{ i + 1 }}.</ion-badge>
                 <ion-label>
                     <div class="line-1">{{ record.question }}: {{ record.answer }}</div>
-                    <div [hidden]="record.isCorrect" class="line-2 wrong">You answered {{ record.yourAnswer }}</div>
+                    <div *ngIf="!record.isCorrect" class="line-2 wrong"
+                        [ngSwitch]="record.yourAnswer">
+                            <span *ngSwitchCase="'Time up'">Your ran out of time.</span>
+                            <span *ngSwitchCase="'Don\'t know'">Your did not know the answer.</span>
+                            <span *ngSwitchDefault>You answered "{{ record.yourAnswer }}".</span>
+                    </div>
                 </ion-label>
                 <ion-avatar class="icon" item-right>
                     <ion-icon [hidden]="!record.isCorrect" name="checkmark" class="correct" item-right></ion-icon>

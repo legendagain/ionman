@@ -1,10 +1,5 @@
 ﻿<ion-header>
     <ion-navbar>
-        <!--
-        <button ion-button menuToggle>
-            <ion-icon name="menu"></ion-icon>
-        </button>
-        -->
         <ion-title text-center>
             Let's learn English!
         </ion-title>
@@ -16,15 +11,21 @@
         <ion-list>
             <button ion-item (click)="goToMenu()">
                 <ion-icon name="game-controller-b" item-left></ion-icon>
-                Let's play!
+                ເລີ່ມ <!-- Let's play! -->
             </button>
             <button ion-item (click)="goToFavorites()">
                 <ion-icon name="clipboard" item-left></ion-icon>
                 Your favorite words
             </button>
+            <!--
+            <button ion-item (click)="goToProgress()">
+                <ion-icon name="pulse" item-left></ion-icon>
+                Your progress
+            </button>
+                -->
             <button ion-item (click)="goToHelp()">
                 <ion-icon name="help-circle" item-left></ion-icon>
-                Help
+                ວິທີຫຼິ້ນ <!-- Help -->
             </button>
         </ion-list>
     </ion-card>

@@ -1,9 +1,9 @@
-/// <reference path="../../models/quiz-record.ts" />
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { QuizPage } from '../quiz/quiz';
 import { Database } from '../../models/database';
 import { Question } from '../../models/question';
+import { LevelModel } from '../../models/level-model';
 
 declare var require: any;
 var _ = require('underscore');
@@ -15,10 +15,13 @@ export class LevelMenuPage {
     difficulty: string;
     private levels: any[];
     isLevelSelected: boolean = false;
-    selectedLevel: Level;
+    selectedLevel: LevelModel;
 
     timeChoices: any[];
+    wordNumberChoices: any[];
     selectedTimeChoice: any;
+    allWords: boolean;
+    selectedNumberOfWords: any;
 
     constructor(private nav: NavController, private params: NavParams) {
         // retrieves all questions of selected difficulty
@@ -28,13 +31,14 @@ export class LevelMenuPage {
 
         this.levels = Database.levels.data.map(e => {
             var level = e.number;
-            return new Level(this.difficulty,
+            return new LevelModel(this.difficulty,
                 level,
                 questions.filter(qns => qns.level == level),
                 e.unlocked);
         });
 
-        this.timeChoices = [{ time: 15 }, { time: 10 }, { time: 5 }];
+        this.timeChoices = [{ time: -1 }, { time: 15 }, { time: 10 }, { time: 5 }];
+        this.wordNumberChoices = [{ number: 50 }, { number: 20 }, { number: 10 }];
     }
 
     selectLevel(selection: number) {
@@ -76,31 +80,34 @@ export class LevelMenuPage {
         this.selectedTimeChoice.selected = true;
     }
 
-    goToQuiz(allWords: boolean) {
-        if (!this.difficulty || !this.selectedLevel || !this.selectedTimeChoice)
-            return;
-
-        this.nav.push(QuizPage, {
-            difficulty: this.difficulty,
-            level: this.selectedLevel.number,
-            time: this.selectedTimeChoice.time,
-            allWords: allWords
-        });
+    selectWords(allWords: boolean) {
+        this.allWords = this.allWords == allWords ? null : allWords;
     }
-}
 
-class Level {
-    correctQuestions: number = 0;
-    totalQuestions: number = 0;
-    selected: boolean = false;
+    selectNumberOfWords(selection: number) {
+        // deselects any (already) selected number of words
+        var selectedNumberOfWords = this.selectedNumberOfWords;
+        if (selectedNumberOfWords) {
+            selectedNumberOfWords.selected = false;
+            this.selectedNumberOfWords = null;
 
-    constructor(
-        difficulty: string,
-        public number: number,
-        questions: Question[],
-        public unlocked: boolean = false
-    ) {
-        this.correctQuestions = questions.filter(qns => qns.correctCount >= 2).length;
-        this.totalQuestions = questions.length;
+            if (selectedNumberOfWords.time == selection)
+                return;
+        }
+
+        // selects number of words
+        this.selectedNumberOfWords = this.wordNumberChoices.filter(x => x.number == selection)[0];
+        this.selectedNumberOfWords.selected = true;
+    }
+
+    goToQuiz() {
+        if (this.difficulty && this.selectedLevel && this.selectedTimeChoice && this.allWords != null && this.selectedNumberOfWords)
+            this.nav.push(QuizPage, {
+                difficulty: this.difficulty,
+                level: this.selectedLevel.number,
+                time: this.selectedTimeChoice.time,
+                allWords: this.allWords,
+                numberOfWords: this.selectedNumberOfWords.number
+            });
     }
 }
